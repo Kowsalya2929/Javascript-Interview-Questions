@@ -11,3 +11,6 @@
 11. Find largest number among 3 numbers
 12. Check Prime number
 13. Find factorial of number
+14. How to take input using readline
+15. Display multiplication table
+16. Print all prime numbers in an interval in javascript
