@@ -1,14 +1,14 @@
 function isPalindrome(str){
     const strLowerCased = str.toLowerCase()
     const strReversed = strLowerCased.split("").reverse().join("")
-    return strLowerCased === strReversed;   
+    return strLowerCased === strReversed ? "It is a plaindrome" : "It is not a palindrome";   
 }
 
-console.log(isPalindrome("Mam"))        //true 
-console.log(isPalindrome("kowsalya"))   //false
-console.log(isPalindrome("wow"))        //true
-console.log(isPalindrome("malayalam"))  //true
-console.log(isPalindrome("Car"))        //false
+console.log(isPalindrome("Mam"))        //It is a plaindrome 
+console.log(isPalindrome("kowsalya"))   //It is not a palindrome
+console.log(isPalindrome("wow"))        //It is a plaindrome
+console.log(isPalindrome("malayalam"))  //It is a plaindrome
+console.log(isPalindrome("Car"))        //It is not a palindrome
 
 //Explanation
 
@@ -30,4 +30,4 @@ console.log(isPalindrome("Car"))        //false
 
 //"car" === "rac" , In this value isn't equal and datatype is equal like both are string datatype.
 
-//So, the answer is false.
+//So, the answer is It is not a palindrome.

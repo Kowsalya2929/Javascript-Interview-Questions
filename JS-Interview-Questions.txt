@@ -14,3 +14,4 @@
 14. How to take input using readline
 15. Display multiplication table
 16. Print all prime numbers in an interval in javascript
+17. Check armstrong number
