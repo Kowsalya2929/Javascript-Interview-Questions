@@ -15,3 +15,8 @@
 15. Display multiplication table
 16. Print all prime numbers in an interval in javascript
 17. Check armstrong number
+18. Sort an array
+19. Merge two arrays
+20. Find the largest element in an array
+21. Remove dublicates from an array
+22. 
