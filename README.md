@@ -21,3 +21,9 @@ JavaScript Interview Questions :-
 19. Merge two arrays
 20. Find the largest element in an array
 21. Remove dublicates from an array
+
+Data Structures :-
+
+  [1]. Array Data Structure 
+        -> Content : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.txt">Link</a>
+        -> Practice Ques : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/array1.js">Link</a>
