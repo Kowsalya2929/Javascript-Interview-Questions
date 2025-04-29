@@ -1,0 +1,38 @@
+Arrays in Data Structure :
+
+    [1]. Arrays is a ordered collections of data
+    [2]. It stores multiple datatype values in a single variable
+
+Types of Arrays :
+
+    [1]. Numbers :-                eg : [1,2,3,4,5,6,7]
+    [2]. Strings :-                eg : ["a","b","c","d"]
+    [3]. Mixed :-                  eg : [1,"a","b",5]
+    [4]. Objects :-                eg : [{name:"a"},{name:"b"}]
+    [5]. Multidimensional :-       eg : [[1,3],[4,5]]
+
+Two ways to create array :
+
+    [1]. Using literal :-          eg : let arr1 = [1,2,4]
+    [2]. Using constructor :-      eg : let arr2 = new Array(1,2,4)
+
+Add & Remove Methods :
+
+    [1]. Add item at the end :-
+            Add one or more elements to the end of array.                                     eg : arr.push(2,3)                           
+    [2]. Add item at the start :-  
+            Add one or more elements to the begining of an array.                             eg : arr.unshift(2,9)
+    [3]. Remove last item :-                                                                  eg : arr.pop()
+    [4]. Remove first item :-                                                                 eg : arr.shift()
+    [5]. splice is remove / replace / add elements :-  
+            Modifies the original array. Splice(index,no of remove elements, add elements)    eg : arr.splice(0,1,"a","b")
+    [6]. Non-mutating version of splice :- 
+            Same as Splice , But returns a new array it doesn't modify the original array.    eg : arr.toSpliced(0,1,"a","b")
+
+Mutation vs Unmutation :
+    
+    [1]. Mutation :-        [1]. It means the original array is changed or modified.
+                            [2]. In-place Change.
+    [2]. Non-mutation :-    [1]. It doesn't change the original array returns new array.
+                            [2]. Original stays same.
+
