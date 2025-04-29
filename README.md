@@ -1,4 +1,4 @@
-:octocat: Coming Soon — The Ultimate JavaScript + DSA Interview Guide! 👌🔥
+:octocat: Coming Soon — The Ultimate JavaScript + DSA in JavaScript Interview Guide! 👌🔥
 
 JavaScript Interview Questions :-
 
