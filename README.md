@@ -3,7 +3,7 @@
 <h2>JavaScript Interview Questions :-</h2>
 
 1. Reverse a string
-2. Check of plaindrome
+2. Check if a string is a palindrome
 3. Fibonacci Series
 4. How to add two numbers
 5. Find square root of a number
@@ -41,7 +41,7 @@ const reverseStr = str.split("").reverse().join("")
 console.log(reverseStr)
 ```
 
-<h3>Check of plaindrome</h3>
+<h3>2. Check if a string is a palindrome</h3>
 
 <h5>Explanation</h5>
 <ul>
@@ -61,12 +61,12 @@ console.log(reverseStr)
 function isPalindrome(str){
     const strLowerCased = str.toLowerCase()
     const strReversed = strLowerCased.split("").reverse().join("")
-    return strLowerCased === strReversed ? "It is a plaindrome" : "It is not a palindrome";   
+    return strLowerCased === strReversed ? "It is a palindrome " : "It is not a palindrome";   
 }
-console.log(isPalindrome("Mam"))        //It is a plaindrome 
+console.log(isPalindrome("Mam"))        //It is a palindrome  
 console.log(isPalindrome("kowsalya"))   //It is not a palindrome
-console.log(isPalindrome("wow"))        //It is a plaindrome
-console.log(isPalindrome("malayalam"))  //It is a plaindrome
+console.log(isPalindrome("wow"))        //It is a palindrome 
+console.log(isPalindrome("malayalam"))  //It is a palindrome 
 console.log(isPalindrome("Car"))        //It is not a palindrome
 ```
 
