@@ -41,6 +41,35 @@ const reverseStr = str.split("").reverse().join("")
 console.log(reverseStr)
 ```
 
+<h3>Check of plaindrome</h3>
+
+<h5>Explanation</h5>
+<ul>
+  <li>1st variable</li>
+  <li>1.step => toLowerCase() method , this is string into lowercase like "Car" as "car".</li>
+  <li>2nd variable</li>
+  <li>2.step => split() method , It turns the string into array of characters ["c","a","r"].</li>
+  <li>3.step => reverse() method , Reverses the array ["r","a","c"].</li>
+  <li>4.step => join() method , Joins the array back into string "rac".</li>
+  <li>return statement is comparision operator like 1st variable === 2nd variable</li>
+  <li>5.step => === , In this triple equal to check the value and datatype, both are same then it will come true otherwise it will come false.</li>
+  <li>"car" === "rac" , In this value isn't equal and datatype is equal like both are string datatype.</li>
+  <li>So, the answer is It is not a palindrome.</li>
+</ul>
+
+```ini
+function isPalindrome(str){
+    const strLowerCased = str.toLowerCase()
+    const strReversed = strLowerCased.split("").reverse().join("")
+    return strLowerCased === strReversed ? "It is a plaindrome" : "It is not a palindrome";   
+}
+console.log(isPalindrome("Mam"))        //It is a plaindrome 
+console.log(isPalindrome("kowsalya"))   //It is not a palindrome
+console.log(isPalindrome("wow"))        //It is a plaindrome
+console.log(isPalindrome("malayalam"))  //It is a plaindrome
+console.log(isPalindrome("Car"))        //It is not a palindrome
+```
+
 
 Data Structures :-
 
