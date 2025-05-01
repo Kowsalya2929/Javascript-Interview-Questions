@@ -62,3 +62,19 @@ Search & Check Methods : (both are Non-mutates)
     [6]. At least one element passes the test.                                             eg : arr.some(n => n % 2 === 0)
     [7]. All element must passes the test.                                                 eg : arr.every(n => n % 2 === 0)
 
+String & Utility Methods :
+
+    [1]. Combine to String using sperator               eg : arr.join("*")  //1*2*3
+                                                             arr.join()     //1,2,3
+    [2]. Converts array to string with comma operator   eg : arr.toString() //1,2,3
+    [3]. Returns number of elements                     eg : arr.length;
+
+Extract & Copy Methods :
+
+    [1]. slice(start,end) (Non-mutating)                             eg : arr = [10,20,30,40,50]
+            Returns a shallow copy of an portion of an array.             arr.slice(0,3)       // [10,20,30]
+            end is exclusive.                                             arr.slice(1,3)       // [20,30]
+    [2]. concat(...arrays) 
+            Merge array into a new one (non-mutating)                eg : arr.concat(arr2)
+            merge one or more arrays                                 eg : arr.concat(arr2,arr3)
+            
