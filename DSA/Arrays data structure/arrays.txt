@@ -29,7 +29,7 @@ Add & Remove Methods :
     [6]. Non-mutating version of splice :- 
             Same as Splice , But returns a new array it doesn't modify the original array.    eg : arr.toSpliced(0,1,"a","b")
 
-Mutation vs Unmutation :
+Mutation vs Non-mutation :
     
     [1]. Mutation :-        [1]. It means the original array is changed or modified.
                             [2]. In-place Change.
@@ -49,4 +49,16 @@ Sorting Methods :
     [4]. Reverse array - (mutatas)               eg : arr.reverse()
     [5]. Reverse array - (Non-mutates)           eg : arr.toReversed()
           Returns new reversed array without changing original array.
+
+Search & Check Methods : (both are Non-mutates)
+
+    [1]. Checks if the array contains specific content. return only true / false.          eg : arr.includes(2)
+    [2]. Return the first index of value , or -1 if it's not found.                        eg : arr = ["a","b","c","a"]
+          it will check (left to right).                                                        arr.indexOf("a")  //0
+          -1 if it's not found.                                                                 arr.indexOf("z")  //-1
+    [3]. If you wanna check (from right to left)                                           eg : arr.lastIndexOf("a") //3
+    [4]. Returns the first element that satisfies the callback conditions.                 eg : arr.find(n => n > 2)
+    [5]. Returns the first element index that satisfies the callback conditions.           eg : arr.findIndex(n => n > 2)
+    [6]. At least one element passes the test.                                             eg : arr.some(n => n % 2 === 0)
+    [7]. All element must passes the test.                                                 eg : arr.every(n => n % 2 === 0)
 
