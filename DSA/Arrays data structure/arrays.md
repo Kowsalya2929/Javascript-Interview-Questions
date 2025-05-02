@@ -79,7 +79,7 @@ console.log(arr)   // [1,2,4]
   <tbody>
     <tr>
       <td>It means the original array is changed or modified.</td>
-      <td>It doesn't change the original array; returns a new array.</td>
+      <td>Returns a new array, It doesn't change the original array.</td>
     </tr>
     <tr>
       <td>In-place change.</td>
