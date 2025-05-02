@@ -74,5 +74,5 @@ console.log(isPalindrome("Car"))        //It is not a palindrome
 Data Structures :-
 
   [1]. Array Data Structure 
-        -> Content : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.txt">Link</a>
+        -> Content : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.md">Link</a>
         -> Practice Ques : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/array1.js">Link</a>
