@@ -1,26 +1,23 @@
-<h3>Arrays in Data Structure :</h3>
+<h4>Arrays in Data Structure :</h4>
 <p>Arrays is a ordered collections of data</p>
 <p>It stores multiple datatype values in a single variable</p>
 
-<h4>Types of Arrays :</h4>
-<p> Numbers :-</p>
+<h5>Types of Arrays :</h5>
+<p>Numbers :-</p>
 
-eg : [1,2,3,4,5,6,7]
-
+```ini eg : [1,2,3,4,5,6,7] ```
 <p>Strings :-</p>
-eg : ["a","b","c","d"]
+
+```ini eg : ["a","b","c","d"] ```
 <p>Mixed :-</p>
-```ini
-eg : [1,"a","b",5]
-```
+
+```ini eg : [1,"a","b",5] ```
 <p>Objects :-</p>
-```ini
-eg : [{name:"a"},{name:"b"}]
-```
+
+```ini eg : [{name:"a"},{name:"b"}] ```
 <p>Multidimensional :-</p>
-```ini
-eg : [[1,3],[4,5]]
-```        
+
+```ini eg : [[1,3],[4,5]] ```
 
 Two ways to create array :
 
