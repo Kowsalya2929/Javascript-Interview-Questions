@@ -69,7 +69,7 @@ console.log(arr)   // [1,2,4]
 
 <h3>Mutation vs Non-Mutation</h3>
 
-<table border="1" cellpadding="8" cellspacing="0">
+<table>
   <thead>
     <tr>
       <th>Mutation</th>
