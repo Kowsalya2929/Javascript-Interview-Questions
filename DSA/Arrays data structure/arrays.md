@@ -21,7 +21,7 @@ let constructor = new Array(1,2,4)
 
 Add & Remove Methods :
 
-<ol></ol>
+<ol>
 <li>Add item at the end : Add one or more elements to the end of array.</li>
             
 ```js
@@ -67,6 +67,7 @@ let arr2 = arr.toSpliced(0,1,"a","b")
 console.log(arr2)  // ["a","b",2,4]
 console.log(arr)   // [1,2,4]
 ```
+</ol>
 
 Mutation vs Non-mutation :
     
