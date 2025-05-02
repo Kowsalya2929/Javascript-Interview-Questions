@@ -17,6 +17,28 @@ let multiDimensional = [[1, 2], [3, 4]];
 let literal  = [1,2,4]
 let constructor = new Array(1,2,4)
 ```
+
+<h3>Mutation vs Non-Mutation</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Non-Mutation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>It means the original array is changed or modified.</td>
+      <td>Returns a new array, It doesn't change the original array.</td>
+    </tr>
+    <tr>
+      <td>In-place change.</td>
+      <td>Original stays the same.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h3>Add & Remove Methods :</h3>
 
 <ol>
@@ -66,28 +88,6 @@ console.log(arr2)  // ["a","b",2,4]
 console.log(arr)   // [1,2,4]
 ```
 </ol>
-
-<h3>Mutation vs Non-Mutation</h3>
-
-<table>
-  <thead>
-    <tr>
-      <th>Mutation</th>
-      <th>Non-Mutation</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>It means the original array is changed or modified.</td>
-      <td>Returns a new array, It doesn't change the original array.</td>
-    </tr>
-    <tr>
-      <td>In-place change.</td>
-      <td>Original stays the same.</td>
-    </tr>
-  </tbody>
-</table>
-
 
 <h3>Sorting Methods :</h3>
 
