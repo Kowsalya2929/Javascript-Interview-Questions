@@ -68,12 +68,14 @@ console.log(arr)   // [1,2,4]
 </ol>
 
 <h3>Mutation vs Non-mutation :</h3>
-    
-    [1]. Mutation :-        [1]. It means the original array is changed or modified.
-                            [2]. In-place Change.
-    [2]. Non-mutation :-    [1]. It doesn't change the original array returns new array.
-                            [2]. Original stays same.
-
+<table>
+<th>Mutation</th>
+<td>It means the original array is changed or modified.</td>
+<td>In-place Change.</td>
+<th>Non-mutation</th>
+<td>It doesn't change the original array returns new array.</td>
+<td>Original stays same.</td>
+</table>
 
 <h3>Sorting Methods :</h3>
 
