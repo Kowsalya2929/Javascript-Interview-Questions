@@ -105,33 +105,34 @@ console.log(arr) // ["apple","banana","chery"]
 let arr = [40,5,100,1] 
 arr.sort() // Incorrect for numbers [1,100,40,5]
 console.log(arr)
-arr.sort((a,b)=> a-b) ascending order // Correct numerical sort [1,5,40,100]
+arr.sort((a,b)=> a-b) //ascending order // Correct numerical sort [1,5,40,100]
 console.log(arr)
-arr.sort((a,b)=> b-a) desending order // Correct numerical sort [100,40,5,1]
+arr.sort((a,b)=> b-a) //desending order // Correct numerical sort [100,40,5,1]
 console.log(arr)
 ```
 <li>toSorted - (Non-mutates) : Returns new sorted array without changing original array.</li>
             
 ```js
 let arr = [40,5,100,1]
-let arr2 = arr.toSorted()
-console.log(arr2)
-console.log(arr)
+let arr2 = arr.toSorted((a,b)=>a-b)
+console.log(arr2)   // [ 1, 5, 40, 100 ]
+console.log(arr)    // [ 40, 5, 100, 1 ]
 ```
-<li>Reverse array - (mutatas)</li>
+<li>Reverse array - (mutates)</li>
             
 ```js
 let arr = ["banana","apple","chery"]
 arr.reverse()
-console.log(arr)
+console.log(arr) // [ 'chery', 'apple', 'banana' ]
 ```
 
 <li>Reverse array - (Non-mutates) : Returns new reversed array without changing original array.</li>
             
 ```js
 let arr = ["banana","apple","chery"]
-arr.toReversed()
-console.log(arr)
+let arr2 = arr.toReversed()
+console.log(arr2) // [ 'chery', 'apple', 'banana' ]
+console.log(arr)  // [ 'banana', 'apple', 'chery' ]
 ```
 
 <h3>Search & Check Methods : (both are Non-mutates)</h3>
