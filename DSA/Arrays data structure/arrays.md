@@ -1,8 +1,8 @@
-<h3>Arrays in Data Structure :</h3>
+<h1>Arrays in Data Structure :</h1>
 
 Arrays is a ordered collections of data.It stores multiple datatype values in a single variable.
 
-Types of Arrays :
+<h3>Types of Arrays :l</h3>
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -11,15 +11,13 @@ let mixed = [1, "a", true];
 let objects = [{ name: "a" }, { name: "b" }];
 let multiDimensional = [[1, 2], [3, 4]];
 ```
-
-Two ways to create array :
+<h3>Two ways to create array :</h3>
 
 ```js
 let literal  = [1,2,4]
 let constructor = new Array(1,2,4)
 ```
-
-Add & Remove Methods :
+<h3>Add & Remove Methods :</h3>
 
 <ol>
 <li>Add item at the end : Add one or more elements to the end of array.</li>
@@ -69,7 +67,7 @@ console.log(arr)   // [1,2,4]
 ```
 </ol>
 
-Mutation vs Non-mutation :
+<h3>Mutation vs Non-mutation :</h3>
     
     [1]. Mutation :-        [1]. It means the original array is changed or modified.
                             [2]. In-place Change.
@@ -77,7 +75,7 @@ Mutation vs Non-mutation :
                             [2]. Original stays same.
 
 
-Sorting Methods :
+<h3>Sorting Methods :</h3>
 
     [1]. Sort alphabetically - (mutates)         eg : arr.sort() // ["apple","banana","chery"]
           arr = ["banana","chery","apple"]
@@ -90,7 +88,8 @@ Sorting Methods :
     [5]. Reverse array - (Non-mutates)           eg : arr.toReversed()
           Returns new reversed array without changing original array.
 
-Search & Check Methods : (both are Non-mutates)
+
+<h3>Search & Check Methods : (both are Non-mutates)</h3>
 
     [1]. Checks if the array contains specific content. return only true / false.          eg : arr.includes(2)
     [2]. Return the first index of value , or -1 if it's not found.                        eg : arr = ["a","b","c","a"]
@@ -102,14 +101,14 @@ Search & Check Methods : (both are Non-mutates)
     [6]. At least one element passes the test.                                             eg : arr.some(n => n % 2 === 0)
     [7]. All element must passes the test.                                                 eg : arr.every(n => n % 2 === 0)
 
-String & Utility Methods :
+<h3>String & Utility Methods :</h3>
 
     [1]. Combine to String using sperator               eg : arr.join("*")  //1*2*3
                                                              arr.join()     //1,2,3
     [2]. Converts array to string with comma operator   eg : arr.toString() //1,2,3
     [3]. Returns number of elements                     eg : arr.length;
 
-Extract & Copy Methods :
+<h3>Extract & Copy Methods :</h3>
 
     [1]. slice(start,end) (Non-mutating)                             eg : arr = [10,20,30,40,50]
             Returns a shallow copy of an portion of an array.             arr.slice(0,3)       // [10,20,30]
