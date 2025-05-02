@@ -3,6 +3,7 @@
 <p>It stores multiple datatype values in a single variable</p>
 
 <h5>Types of Arrays :</h5>
+
 ```js
 let numbers = [1, 2, 3, 4, 5];
 let strings = ["a", "b", "c"];
