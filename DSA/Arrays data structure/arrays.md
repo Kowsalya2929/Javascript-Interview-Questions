@@ -2,7 +2,7 @@
 
 Arrays is a ordered collections of data.It stores multiple datatype values in a single variable.
 
-<h3>Types of Arrays :l</h3>
+<h3>Types of Arrays :</h3>
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -91,17 +91,48 @@ console.log(arr)   // [1,2,4]
 
 <h3>Sorting Methods :</h3>
 
-    [1]. Sort alphabetically - (mutates)         eg : arr.sort() // ["apple","banana","chery"]
-          arr = ["banana","chery","apple"]
-    [2]. Sort numerically,(mutates)              eg : arr.sort() // Incorrect for numbers [1,100,40,5]
-          arr = [40,5,100,1]                          arr.sort((a,b)=> a-b) ascending order // Correct numerical sort [1,5,40,100]
-                                                      arr.sort((a,b)=> b-a) desending order // Correct numerical sort [100,40,5,1]
-    [3]. toSorted - (Non-mutates)                eg : arr.toSorted()
-          Returns new sorted array without changing original array.
-    [4]. Reverse array - (mutatas)               eg : arr.reverse()
-    [5]. Reverse array - (Non-mutates)           eg : arr.toReversed()
-          Returns new reversed array without changing original array.
+<ol>
+<li>Sort alphabetically - (mutates) :</li>
+            
+```js
+let arr = ["banana","apple","chery"]
+arr.sort() 
+console.log(arr) // ["apple","banana","chery"]
+```
+<li>Sort numerically - (mutates)</li>
+            
+```js
+let arr = [40,5,100,1] 
+arr.sort() // Incorrect for numbers [1,100,40,5]
+console.log(arr)
+arr.sort((a,b)=> a-b) ascending order // Correct numerical sort [1,5,40,100]
+console.log(arr)
+arr.sort((a,b)=> b-a) desending order // Correct numerical sort [100,40,5,1]
+console.log(arr)
+```
+<li>toSorted - (Non-mutates) : Returns new sorted array without changing original array.</li>
+            
+```js
+let arr = [40,5,100,1]
+let arr2 = arr.toSorted()
+console.log(arr2)
+console.log(arr)
+```
+<li>Reverse array - (mutatas)</li>
+            
+```js
+let arr = ["banana","apple","chery"]
+arr.reverse()
+console.log(arr)
+```
 
+<li>Reverse array - (Non-mutates) : Returns new reversed array without changing original array.</li>
+            
+```js
+let arr = ["banana","apple","chery"]
+arr.toReversed()
+console.log(arr)
+```
 
 <h3>Search & Check Methods : (both are Non-mutates)</h3>
 
