@@ -3,21 +3,13 @@
 <p>It stores multiple datatype values in a single variable</p>
 
 <h5>Types of Arrays :</h5>
-<p>Numbers :-</p>
-
-```ini eg : [1,2,3,4,5,6,7] ```
-<p>Strings :-</p>
-
-```ini eg : ["a","b","c","d"] ```
-<p>Mixed :-</p>
-
-```ini eg : [1,"a","b",5] ```
-<p>Objects :-</p>
-
-```ini eg : [{name:"a"},{name:"b"}] ```
-<p>Multidimensional :-</p>
-
-```ini eg : [[1,3],[4,5]] ```
+```js
+let numbers = [1, 2, 3, 4, 5];
+let strings = ["a", "b", "c"];
+let mixed = [1, "a", true];
+let objects = [{ name: "a" }, { name: "b" }];
+let multiDimensional = [[1, 2], [3, 4]];
+```
 
 Two ways to create array :
 
