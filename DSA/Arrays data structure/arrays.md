@@ -1,8 +1,8 @@
-<h4>Arrays in Data Structure :</h4>
-<p>Arrays is a ordered collections of data</p>
-<p>It stores multiple datatype values in a single variable</p>
+<h3>Arrays in Data Structure :</h3>
 
-<h5>Types of Arrays :</h5>
+Arrays is a ordered collections of data.It stores multiple datatype values in a single variable.
+
+Types of Arrays :
 
 ```js
 let numbers = [1, 2, 3, 4, 5];
@@ -14,21 +14,59 @@ let multiDimensional = [[1, 2], [3, 4]];
 
 Two ways to create array :
 
-    [1]. Using literal :-          eg : let arr1 = [1,2,4]
-    [2]. Using constructor :-      eg : let arr2 = new Array(1,2,4)
+```js
+let literal  = [1,2,4]
+let constructor = new Array(1,2,4)
+```
 
 Add & Remove Methods :
 
-    [1]. Add item at the end :-
-            Add one or more elements to the end of array.                      eg : arr.push(2,3)                           
-    [2]. Add item at the start :-  
-            Add one or more elements to the begining of an array.                             eg : arr.unshift(2,9)
-    [3]. Remove last item :-                                                                  eg : arr.pop()
-    [4]. Remove first item :-                                                                 eg : arr.shift()
-    [5]. splice is remove / replace / add elements :-  
-            Modifies the original array. Splice(index,no of remove elements, add elements)    eg : arr.splice(0,1,"a","b")
-    [6]. Non-mutating version of splice :- 
-            Same as Splice , But returns a new array it doesn't modify the original array.    eg : arr.toSpliced(0,1,"a","b")
+<ol></ol>
+<li>Add item at the end : Add one or more elements to the end of array.</li>
+            
+```js
+let arr = [1,2,4]
+arr.push(2,3)
+console.log(arr) // [1,2,4,2,3]
+```
+<li>Add item at the start : Add one or more elements to the begining of an array.</li>
+
+```js
+let arr = [1,2,4]
+arr.unshift(2,9)
+console.log(arr) // [2,9,1,2,4]
+```
+
+<li>Remove last item :</li>
+
+```js
+let arr = [1,2,4]
+arr.pop()
+console.log(arr) // [1,2]
+```
+<li>Remove first item :</li>
+
+```js
+let arr = [1,2,4]
+arr.shift()
+console.log(arr) // [2,4]
+```
+<li>splice is remove / replace / add elements : Modifies the original array. Splice(index,no of remove elements, add elements)</li>
+
+```js
+let arr = [1,2,3]
+arr.splice(0,1,"a","b")
+console.log(arr) // ["a","b",2,3]
+```
+
+<li>Non-mutating version of splice : Same as Splice , But returns a new array it doesn't modify the original array.</li>
+
+```js
+let arr = [1,2,4]
+let arr2 = arr.toSpliced(0,1,"a","b")
+console.log(arr2)  // ["a","b",2,4]
+console.log(arr)   // [1,2,4]
+```
 
 Mutation vs Non-mutation :
     
