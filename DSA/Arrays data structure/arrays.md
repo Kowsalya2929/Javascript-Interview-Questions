@@ -76,5 +76,15 @@ Extract & Copy Methods :
             end is exclusive.                                             arr.slice(1,3)       // [20,30]
     [2]. concat(...arrays) 
             Merge array into a new one (non-mutating)                eg : arr.concat(arr2)
-            merge one or more arrays                                 eg : arr.concat(arr2,arr3)
-            
+            Merge one or more arrays                                 eg : arr.concat(arr2,arr3)
+    [3]. copyWithin(target,start,end)                                eg : arr.copyWithin(0,3)
+            Mutates the original array, end is exclusive, overwrites the values at starting.
+            It doesn't add and remove items, only replace.
+    [4]. with(index, value)                                          eg : arr = [1,2,3]
+            Returns a new array with one element replaced.                const arr2 = arr.with(1,99) //[1,99,3]
+    [5]. fill(value,start,end)                                       eg : arr = [1,2,3,4]
+            Mutates the array.                                        
+            Replace value of the array with same value.              eg : arr.fil(99,0,2)  // [99,99,3,4]
+            start is inclusive and end is exclusive.
+            if start and end is not provided, it fills the entire array.   eg : arr.fill(99)  // [99,99,99,99]
+    [6]. Array.from(obj)
