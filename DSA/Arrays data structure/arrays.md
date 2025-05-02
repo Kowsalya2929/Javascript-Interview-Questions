@@ -1,4 +1,4 @@
-Arrays in Data Structure :
+<h1>Arrays in Data Structure :</h1>
 
     [1]. Arrays is a ordered collections of data
     [2]. It stores multiple datatype values in a single variable
