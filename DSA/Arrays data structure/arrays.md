@@ -1,15 +1,28 @@
 <h3>Arrays in Data Structure :</h3>
+<p>Arrays is a ordered collections of data</p>
+<p>It stores multiple datatype values in a single variable</p>
 
-    [1]. Arrays is a ordered collections of data
-    [2]. It stores multiple datatype values in a single variable
-
-Types of Arrays :
-
-    [1]. Numbers :-                eg : [1,2,3,4,5,6,7]
-    [2]. Strings :-                eg : ["a","b","c","d"]
-    [3]. Mixed :-                  eg : [1,"a","b",5]
-    [4]. Objects :-                eg : [{name:"a"},{name:"b"}]
-    [5]. Multidimensional :-       eg : [[1,3],[4,5]]
+<h4>Types of Arrays :</h4>
+<p> Numbers :-</p>
+```ini
+eg : [1,2,3,4,5,6,7]
+```
+<p>Strings :-</p>
+```ini
+eg : ["a","b","c","d"]
+```
+<p>Mixed :-</p>
+```ini
+eg : [1,"a","b",5]
+```
+<p>Objects :-</p>
+```ini
+eg : [{name:"a"},{name:"b"}]
+```
+<p>Multidimensional :-</p>
+```ini
+eg : [[1,3],[4,5]]
+```        
 
 Two ways to create array :
 
@@ -19,7 +32,7 @@ Two ways to create array :
 Add & Remove Methods :
 
     [1]. Add item at the end :-
-            Add one or more elements to the end of array.                                     eg : arr.push(2,3)                           
+            Add one or more elements to the end of array.                      eg : arr.push(2,3)                           
     [2]. Add item at the start :-  
             Add one or more elements to the begining of an array.                             eg : arr.unshift(2,9)
     [3]. Remove last item :-                                                                  eg : arr.pop()
