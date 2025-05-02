@@ -4,13 +4,11 @@
 
 <h4>Types of Arrays :</h4>
 <p> Numbers :-</p>
-```ini
+
 eg : [1,2,3,4,5,6,7]
-```
+
 <p>Strings :-</p>
-```ini
 eg : ["a","b","c","d"]
-```
 <p>Mixed :-</p>
 ```ini
 eg : [1,"a","b",5]
