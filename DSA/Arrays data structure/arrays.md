@@ -67,15 +67,27 @@ console.log(arr)   // [1,2,4]
 ```
 </ol>
 
-<h3>Mutation vs Non-mutation :</h3>
-<table>
-<th>Mutation</th>
-<td>It means the original array is changed or modified.</td>
-<td>In-place Change.</td>
-<th>Non-mutation</th>
-<td>It doesn't change the original array returns new array.</td>
-<td>Original stays same.</td>
+<h3>Mutation vs Non-Mutation</h3>
+
+<table border="1" cellpadding="8" cellspacing="0">
+  <thead>
+    <tr>
+      <th>Mutation</th>
+      <th>Non-Mutation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>It means the original array is changed or modified.</td>
+      <td>It doesn't change the original array; returns a new array.</td>
+    </tr>
+    <tr>
+      <td>In-place change.</td>
+      <td>Original stays the same.</td>
+    </tr>
+  </tbody>
 </table>
+
 
 <h3>Sorting Methods :</h3>
 
