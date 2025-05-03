@@ -141,8 +141,7 @@ console.log(arr)  // [ 'banana', 'apple', 'chery' ]
             
 ```js
 let arr = [1,3,5,2,7]
-arr.includes(2)
-console.log(arr) // true
+console.log(arr.includes(2)) // true
 ```
 <li>Return the first index of value , or -1 if it's not found.</li>
             
@@ -155,36 +154,33 @@ console.log(arr.indexOf("z"))  //-1 //-1 if it's not found.
             
 ```js
 let arr = ["a","b","c","a"]
-coonsole.log(arr.lastIndexOf("a")) //3
+console.log(arr.lastIndexOf("a")) // 3
 ```
 <li>Returns the first element that satisfies the callback conditions.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-let result = arr.find(n => n > 2)
-console.log(result)  //
+console.log(arr.find(n => n > 2))  // 3
 ```
 <li>Returns the first element index that satisfies the callback conditions.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-arr.findIndex(n => n > 2)
-console.log(result)  //
+console.log(arr.findIndex(n => n > 2))  // 1
 ```
 <li>At least one element passes the test.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-arr.some(n => n % 2 === 0)
-console.log(result)  //
+console.log(arr.some(n => n % 2 === 0))  //true
 ```
 <li>All element must passes the test.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-arr.every(n => n % 2 === 0)
-console.log(result)  //
+console.log(arr.every(n => n % 2 === 0))  // false
 ```
+</ol>
 
 <h3>String & Utility Methods :</h3>
 
