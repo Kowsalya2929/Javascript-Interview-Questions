@@ -1,5 +1,12 @@
 :octocat: Coming Soon — The Ultimate JavaScript + DSA in JavaScript Interview Guide! 👌🔥
 
+<h2>Data Structures :-</h2>
+
+  [1]. Array Data Structure 
+        -> Content : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.md">Link</a> <br>
+        -> Practice Ques : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/array1.js">Link</a>
+
+
 <h2>JavaScript Interview Questions :-</h2>
 
 1. Reverse a string
@@ -70,9 +77,3 @@ console.log(isPalindrome("malayalam"))  //It is a palindrome
 console.log(isPalindrome("Car"))        //It is not a palindrome
 ```
 
-
-Data Structures :-
-
-  [1]. Array Data Structure 
-        -> Content : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.md">Link</a>
-        -> Practice Ques : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/array1.js">Link</a>
