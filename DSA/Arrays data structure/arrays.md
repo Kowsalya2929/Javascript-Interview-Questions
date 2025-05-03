@@ -136,16 +136,55 @@ console.log(arr)  // [ 'banana', 'apple', 'chery' ]
 ```
 
 <h3>Search & Check Methods : (both are Non-mutates)</h3>
-
-    [1]. Checks if the array contains specific content. return only true / false.          eg : arr.includes(2)
-    [2]. Return the first index of value , or -1 if it's not found.                        eg : arr = ["a","b","c","a"]
-          it will check (left to right).                                                        arr.indexOf("a")  //0
-          -1 if it's not found.                                                                 arr.indexOf("z")  //-1
-    [3]. If you wanna check (from right to left)                                           eg : arr.lastIndexOf("a") //3
-    [4]. Returns the first element that satisfies the callback conditions.                 eg : arr.find(n => n > 2)
-    [5]. Returns the first element index that satisfies the callback conditions.           eg : arr.findIndex(n => n > 2)
-    [6]. At least one element passes the test.                                             eg : arr.some(n => n % 2 === 0)
-    [7]. All element must passes the test.                                                 eg : arr.every(n => n % 2 === 0)
+<ol>
+<li>Checks if the array contains specific content. return only true / false.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+arr.includes(2)
+console.log(arr) // true
+```
+<li>Return the first index of value , or -1 if it's not found.</li>
+            
+```js
+let arr = ["a","b","c","a"]
+console.log(arr.indexOf("a"))  //0  //it will check (left to right).
+console.log(arr.indexOf("z"))  //-1 //-1 if it's not found.
+```
+<li>If you wanna check (from right to left)</li>
+            
+```js
+let arr = ["a","b","c","a"]
+coonsole.log(arr.lastIndexOf("a")) //3
+```
+<li>Returns the first element that satisfies the callback conditions.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+let result = arr.find(n => n > 2)
+console.log(result)  //
+```
+<li>Returns the first element index that satisfies the callback conditions.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+arr.findIndex(n => n > 2)
+console.log(result)  //
+```
+<li>At least one element passes the test.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+arr.some(n => n % 2 === 0)
+console.log(result)  //
+```
+<li>All element must passes the test.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+arr.every(n => n % 2 === 0)
+console.log(result)  //
+```
 
 <h3>String & Utility Methods :</h3>
 
