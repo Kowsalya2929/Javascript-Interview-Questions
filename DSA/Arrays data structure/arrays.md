@@ -203,12 +203,35 @@ console.log(arr) // [ 1, 3, 5, 2, 7 ]
 ```
 </ol>
 
-<h3>String & Utility Methods :</h3>
 
-    [1]. Combine to String using sperator               eg : arr.join("*")  //1*2*3
-                                                             arr.join()     //1,2,3
-    [2]. Converts array to string with comma operator   eg : arr.toString() //1,2,3
-    [3]. Returns number of elements                     eg : arr.length;
+<h3>String & Utility Methods :</h3>
+<ol>
+<li>Combine to String using sperator</li>
+
+```js
+let arr = [1,2,3]
+let arr2 = arr.join("*") 
+let arr3 = arr.join()    
+console.log(arr) //[ 1, 2, 3 ]
+console.log(arr2) // 1*2*3
+console.log(arr3) // 1,2,3
+```
+
+<li>Converts array to string with comma operator</li>
+
+```js
+let arr = [1,2,3,"a"]
+let arr2 = arr.toString() 
+console.log(arr) // [1,2,3,"a"]
+console.log(arr2) // 1,2,3,a
+```
+<li>Returns number of elements</li>
+
+```js
+let arr = [1,2,3,"a"]
+console.log(arr.length) // 4
+```
+</ol>
 
 <h3>Extract & Copy Methods :</h3>
 
