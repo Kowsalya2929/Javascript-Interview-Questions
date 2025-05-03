@@ -291,4 +291,31 @@ console.log(arr)  // [ 99, 99, 99, 99 ]
 console.log(arr3) // [ 99, 99, 99, 99 ]
 ```
 
+<li>Array.isArray(obj) : Check if the value is array</li>
+
+```js
+let arr = [1,2,3]
+let arr2 = new Array(1,2,3)
+console.log(Array.isArray(arr))  // true
+console.log(Array.isArray(arr2)) // true
+console.log(typeof arr)  // object
+console.log(typeof arr2)  // object
+```
+
+<li>Array.of(...items) : Creates array from args</li>
+
+```js
+const arr = Array.of(7,2)
+console.log(arr) // [ 7, 2 ]
+const arr2 = Array.of(7)
+console.log(arr2) // [ 7 ]
+```
+
+<li>Array.from(obj) :	Converts string to array</li>
+
+```js
+let str = "kowsalya"
+console.log(Array.from(str)) // ['k', 'o', 'w', 's', 'a', 'l', 'y', 'a' ]
+```
+
 </ol>
