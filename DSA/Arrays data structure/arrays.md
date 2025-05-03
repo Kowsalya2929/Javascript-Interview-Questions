@@ -134,6 +134,7 @@ let arr2 = arr.toReversed()
 console.log(arr2) // [ 'chery', 'apple', 'banana' ]
 console.log(arr)  // [ 'banana', 'apple', 'chery' ]
 ```
+</ol>
 
 <h3>Search & Check Methods : (both are Non-mutates)</h3>
 <ol>
