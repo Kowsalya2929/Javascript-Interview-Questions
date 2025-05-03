@@ -311,7 +311,7 @@ const arr2 = Array.of(7)
 console.log(arr2) // [ 7 ]
 ```
 
-<li>Array.from(obj) :	Converts string to array</li>
+<li>Array.from(obj) :	Converts or Create string to array</li>
 
 ```js
 let str = "kowsalya"
