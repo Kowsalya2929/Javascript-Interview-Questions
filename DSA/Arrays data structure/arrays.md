@@ -90,6 +90,18 @@ let arr2 = arr.toSpliced(0,1,"a","b")
 console.log(arr)  // [1,2,4]
 console.log(arr2)   // ["a","b",2,4] 
 ```
+
+<li>delete arr.property : It only delete property not hole array</li>
+
+```js
+let arr = [1,2,4]
+delete arr[1];
+console.log(arr)           // [ 1, <1 empty item>, 4 ]
+console.log(arr.length)    // 3 (length doesn't change)
+console.log(1 in arr);     // false
+console.log(arr[1]);       // undefined
+```
+
 </ol>
 
 <h3>Sorting Methods :</h3>
@@ -151,6 +163,17 @@ let arr2 = arr.includes(2)
 console.log(arr) // [ 1, 3, 5, 2, 7 ]
 console.log(arr2) // true
 ```
+<li>arr[index] : Returns the element at a specific index, and it supports negative indexing.</li>
+            
+```js
+let arr = ["a","b","c","a"]
+let arr2 = arr.at(0)  
+let arr3 = arr.at(-2)  
+console.log(arr) // [ 'a', 'b', 'c', 'a' ]
+console.log(arr2) // a
+console.log(arr3) // c
+```
+
 <li>Return the first index of value , or -1 if it's not found.</li>
             
 ```js
@@ -185,6 +208,24 @@ let arr2 = arr.findIndex(n => n > 2)
 console.log(arr2) // 1
 console.log(arr) // [ 1, 3, 5, 2, 7 ]
 ```
+
+<li>Returns the last element that satisfies the callback conditions.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+let arr2 = arr.findLast(n => n > 2)
+console.log(arr2) // 7
+console.log(arr) // [ 1, 3, 5, 2, 7 ]
+```
+<li>Returns the last element index that satisfies the callback conditions.</li>
+            
+```js
+let arr = [1,3,5,2,7]
+let arr2 = arr.findLastIndex(n => n > 2)
+console.log(arr2) // 4
+console.log(arr) // [ 1, 3, 5, 2, 7 ]
+```
+
 <li>At least one element passes the test.</li>
             
 ```js
@@ -215,6 +256,18 @@ let arr3 = arr.join()
 console.log(arr) //[ 1, 2, 3 ]
 console.log(arr2) // 1*2*3
 console.log(arr3) // 1,2,3
+```
+<li>It turns string into array of characters</li>
+
+```js
+let str = "kowsalya loganathan"
+let str2 = str.split("") 
+let str3 = str.split()
+let str4 = str.split(" ")
+console.log(str) // kowsalya loganathan
+console.log(str2) // [ 'k', 'o', 'w', 's', 'a', 'l', 'y', 'a', ' ', 'l', 'o', 'g', 'a', 'n', 'a', 't', 'h', 'a', 'n' ]
+console.log(str3) // [ 'kowsalya loganathan' ]
+console.log(str4) // [ 'kowsalya', 'loganathan' ]
 ```
 
 <li>Converts array to string with comma operator</li>
