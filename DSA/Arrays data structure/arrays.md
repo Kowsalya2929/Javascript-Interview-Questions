@@ -234,21 +234,61 @@ console.log(arr.length) // 4
 </ol>
 
 <h3>Extract & Copy Methods :</h3>
+<ol>
+<li>slice(start,end) (Non-mutating) : Returns a shallow copy of an portion of an array.End is exclusive.</li>
 
-    [1]. slice(start,end) (Non-mutating)                             eg : arr = [10,20,30,40,50]
-            Returns a shallow copy of an portion of an array.             arr.slice(0,3)       // [10,20,30]
-            end is exclusive.                                             arr.slice(1,3)       // [20,30]
-    [2]. concat(...arrays) 
-            Merge array into a new one (non-mutating)                eg : arr.concat(arr2)
-            Merge one or more arrays                                 eg : arr.concat(arr2,arr3)
-    [3]. copyWithin(target,start,end)                                eg : arr.copyWithin(0,3)
-            Mutates the original array, end is exclusive, overwrites the values at starting.
-            It doesn't add and remove items, only replace.
-    [4]. with(index, value)                                          eg : arr = [1,2,3]
-            Returns a new array with one element replaced.                const arr2 = arr.with(1,99) //[1,99,3]
-    [5]. fill(value,start,end)                                       eg : arr = [1,2,3,4]
-            Mutates the array.                                        
-            Replace value of the array with same value.              eg : arr.fil(99,0,2)  // [99,99,3,4]
-            start is inclusive and end is exclusive.
-            if start and end is not provided, it fills the entire array.   eg : arr.fill(99)  // [99,99,99,99]
-    [6]. Array.from(obj)
+```js
+let arr = [10,20,30,40,50]
+let arr2 = arr.slice(0,3)       
+let arr3 = arr.slice(1,3) 
+console.log(arr)  // [10,20,30,40,50]
+console.log(arr2) // [10,20,30]
+console.log(arr3) // [20,30]
+```
+
+<li>concat(...arrays) : Merge array into a new one (non-mutating),Merge one or more arrays.</li>
+
+```js
+let arr = [1,2,4]
+let arr2 = [2,4,5]
+let arr3 = [4,5,6]
+let v1 = arr.concat(arr2)
+let v2 = arr.concat(arr2,arr3)
+console.log(arr)  // [ 1, 2, 4 ]
+console.log(arr2) // [ 2, 4, 5 ]
+console.log(arr3) // [ 4, 5, 6 ]
+console.log(v1)   // [ 1, 2, 4, 2, 4, 5 ]
+console.log(v2)   // [ 1, 2, 4, 2, 4, 5, 4, 5, 6 ]
+```
+
+<li>copyWithin(target,start,end) : Mutates the original array, end is exclusive, overwrites the values at starting.It doesn't add and remove items, only replace.</li>
+
+```js
+let arr = [1,2,3,4,5]
+let arr2 = arr.copyWithin(0,3)
+console.log(arr)  //[ 4, 5, 3, 4, 5 ]
+console.log(arr2) //[ 4, 5, 3, 4, 5 ]
+```
+
+<li>with(index, value) : Returns a new array with one element replaced.</li>
+
+```js
+let arr = [1,2,3]
+let arr2 = arr.with(1,99) 
+console.log(arr)  //[ 1, 2, 3 ]
+console.log(arr2) //[ 1, 99, 3 ]
+```
+
+<li>fill(value,start,end) : Mutates the array.Replace value of the array with same value.start is inclusive and end is exclusive.if start and end is not provided, it fills the entire array.</li>
+
+```js
+let arr = [1,2,3,4]
+console.log(arr)  // [ 1, 2, 3, 4 ]
+let arr2 = arr.fill(99,0,2) 
+console.log(arr2) // [ 99, 99, 3, 4 ]
+let arr3 = arr.fill(99)  
+console.log(arr)  // [ 99, 99, 99, 99 ]
+console.log(arr3) // [ 99, 99, 99, 99 ]
+```
+
+</ol>
