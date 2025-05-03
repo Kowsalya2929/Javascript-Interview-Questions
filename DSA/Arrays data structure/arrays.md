@@ -75,8 +75,9 @@ console.log(arr) // [2,4]
 
 ```js
 let arr = [1,2,3]
-arr.splice(0,1,"a","b")
+let arr2 = arr.splice(0,1,"a","b")
 console.log(arr) // ["a","b",2,3]
+console.log(arr2) // ["a","b",2,3]
 ```
 
 <li>Non-mutating version of splice : Same as Splice , But returns a new array it doesn't modify the original array.</li>
@@ -84,8 +85,8 @@ console.log(arr) // ["a","b",2,3]
 ```js
 let arr = [1,2,4]
 let arr2 = arr.toSpliced(0,1,"a","b")
-console.log(arr2)  // ["a","b",2,4]
-console.log(arr)   // [1,2,4]
+console.log(arr)  // ["a","b",2,4]
+console.log(arr2)   // [1,2,4]
 ```
 </ol>
 
@@ -96,8 +97,9 @@ console.log(arr)   // [1,2,4]
             
 ```js
 let arr = ["banana","apple","chery"]
-arr.sort() 
+let arr2 = arr.sort() 
 console.log(arr) // ["apple","banana","chery"]
+console.log(arr2) // ["apple","banana","chery"]
 ```
 <li>Sort numerically - (mutates)</li>
             
@@ -115,15 +117,16 @@ console.log(arr)
 ```js
 let arr = [40,5,100,1]
 let arr2 = arr.toSorted((a,b)=>a-b)
-console.log(arr2)   // [ 1, 5, 40, 100 ]
-console.log(arr)    // [ 40, 5, 100, 1 ]
+console.log(arr)   // [ 1, 5, 40, 100 ]
+console.log(arr2)    // [ 40, 5, 100, 1 ]
 ```
 <li>Reverse array - (mutates)</li>
             
 ```js
 let arr = ["banana","apple","chery"]
-arr.reverse()
+let arr2 = arr.reverse()
 console.log(arr) // [ 'chery', 'apple', 'banana' ]
+console.log(arr2) // [ 'chery', 'apple', 'banana' ]
 ```
 
 <li>Reverse array - (Non-mutates) : Returns new reversed array without changing original array.</li>
@@ -131,8 +134,8 @@ console.log(arr) // [ 'chery', 'apple', 'banana' ]
 ```js
 let arr = ["banana","apple","chery"]
 let arr2 = arr.toReversed()
-console.log(arr2) // [ 'chery', 'apple', 'banana' ]
-console.log(arr)  // [ 'banana', 'apple', 'chery' ]
+console.log(arr) // [ 'chery', 'apple', 'banana' ]
+console.log(arr2)  // [ 'banana', 'apple', 'chery' ]
 ```
 </ol>
 
@@ -142,44 +145,59 @@ console.log(arr)  // [ 'banana', 'apple', 'chery' ]
             
 ```js
 let arr = [1,3,5,2,7]
-console.log(arr.includes(2)) // true
+let arr2 = arr.includes(2)
+console.log(arr) // true
+console.log(arr2) // true
 ```
 <li>Return the first index of value , or -1 if it's not found.</li>
             
 ```js
 let arr = ["a","b","c","a"]
-console.log(arr.indexOf("a"))  //0  //it will check (left to right).
-console.log(arr.indexOf("z"))  //-1 //-1 if it's not found.
+let arr2 = arr.indexOf("a")  //0  //it will check (left to right).
+let arr3 = arr.indexOf("z")  //-1 //-1 if it's not found.
+console.log(arr) // true
+console.log(arr2) // true
+console.log(arr3) // true
 ```
 <li>If you wanna check (from right to left)</li>
             
 ```js
 let arr = ["a","b","c","a"]
-console.log(arr.lastIndexOf("a")) // 3
+let arr2 = arr.lastIndexOf("a") // 3
+console.log(arr2) // true
+console.log(arr) // true
 ```
 <li>Returns the first element that satisfies the callback conditions.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-console.log(arr.find(n => n > 2))  // 3
+let arr2 = arr.find(n => n > 2)  // 3
+console.log(arr2) // true
+console.log(arr) // true
 ```
 <li>Returns the first element index that satisfies the callback conditions.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-console.log(arr.findIndex(n => n > 2))  // 1
+let arr2 = arr.findIndex(n => n > 2)  // 1
+console.log(arr2) // true
+console.log(arr) // true
 ```
 <li>At least one element passes the test.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-console.log(arr.some(n => n % 2 === 0))  //true
+let arr2 = arr.some(n => n % 2 === 0)  //true
+console.log(arr2) // true
+console.log(arr) // true
 ```
 <li>All element must passes the test.</li>
             
 ```js
 let arr = [1,3,5,2,7]
-console.log(arr.every(n => n % 2 === 0))  // false
+let arr2 = arr.every(n => n % 2 === 0)  // false
+console.log(arr2) // true
+console.log(arr) // true
 ```
 </ol>
 
