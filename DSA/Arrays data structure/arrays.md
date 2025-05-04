@@ -448,7 +448,7 @@ console.log(arr) // [ 1, 2, 3 ]
 <li>flatMap(callback) : First does a map , then flatten one level.</li>
 
 ```js
-//Example 1 :
+//Example 1 : Correct
 let arr = [1,2,3]
 let result = arr.flatMap((n)=>{
   return [ n , n * 10]
@@ -456,7 +456,7 @@ let result = arr.flatMap((n)=>{
 console.log(result) // [ 1, 10, 2, 20, 3, 30 ]
 console.log(arr)    // [ 1, 2, 3 ]
 
-//Example 2 : In this return statement return only one. If you wanna all element return you can use [] square bracket.
+//Example 2 : Incorrect, In this return statement using comma operator (only returns last). Use array bracket [] for both values.
 let arr = [1,2,3]
 let result = arr.flatMap((n)=>{
   return  n , n * 10
