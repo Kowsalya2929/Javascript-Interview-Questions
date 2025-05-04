@@ -467,18 +467,34 @@ console.log(result) // [ 10, 20, 30 ]
 console.log(arr)    // [ 1, 2, 3 ]
 ```
 
-<li></li>
+<li>filter(callback) : Returns a new array with filtered elements</li>
 
 ```js
+let arr = [1,2,3,4,6,7,8,8,9]
+let result = arr.filter((n)=>{
+  return n > 3;
+})
+console.log(result) // [ 4, 6, 7, 8, 8, 9 ]
+console.log(arr) // [ 1, 2, 3, 4, 6, 7, 8, 8, 9 ]
 ```
 
-<li></li>
+<li>reduce() : Reduce the array (left to right) and return a single value (like sum, product, etc)</li>
 
 ```js
+let arr = [2,2,3]
+let result = arr.reduce((acc,v)=>{
+  return acc + v
+},0) 
+console.log(result) // 7
 ```
 
-<li></li>
+<li>reduceRight() : Reduce the array (right to left) and return a single value (like sum, product, etc)</li>
 
 ```js
+let arr = [2,2,3]
+let result = arr.reduceRight((acc,v)=>{
+  return acc + v
+},0) 
+console.log(result) // 7
 ```
 <ol>
