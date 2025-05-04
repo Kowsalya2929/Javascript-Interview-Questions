@@ -372,8 +372,10 @@ console.log(Array.from(str)) // ['k', 'o', 'w', 's', 'a', 'l', 'y', 'a' ]
 ```
 </ol>
 
-<h4>Iteration & Looping Methods</h4>
+<h3>Iteration & Looping Methods</h3>
+
 <ol>
+
 <li>flat() : Flattens a nested array into a single level array</li>
 
 ```js
