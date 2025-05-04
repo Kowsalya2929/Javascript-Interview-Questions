@@ -370,5 +370,113 @@ console.log(arr2) // [ 7 ]
 let str = "kowsalya"
 console.log(Array.from(str)) // ['k', 'o', 'w', 's', 'a', 'l', 'y', 'a' ]
 ```
-
 </ol>
+
+<h4>Iteration & Looping Methods</h4>
+<ol>
+<li>flat() : Flattens a nested array into a single level array</li>
+
+```js
+let arr = [[1,2,3],[4,5],[6,6]]
+console.log(arr.flat()) //[ 1, 2, 3, 4, 5, 6, 6 ]
+```
+
+<li>entries() : Returns iterator of [index,value] pairs</li>
+
+```js
+let arr = ["a","b","c"]
+for(let [index, value] of arr.entries()){
+  console.log(index, value)
+}
+// 0 a
+// 1 b
+// 2 c
+```
+
+<li>keys() : Returns iterator of all array indexes</li>
+
+```js
+let arr = ["a","b"]
+for(let i of arr.keys()){
+  console.log(i)
+}
+// 0
+// 1
+```
+
+<li>values() : Returns iterator of all array values</li>
+
+```js
+let arr = ["a","b"]
+for(let val of arr.values()){
+  console.log(val)
+}
+// a
+// b
+```
+
+<li>map(callback) : Transforms each element into a new array. Map will loop through every element for that specific operation.</li>
+
+```js
+let arr = [1,2,3,4,5]
+let result = arr.map((n)=>{
+  return n * 10
+})
+console.log(result)   // [ 10, 20, 30, 40, 50 ]
+console.log(arr)      // [ 1, 2, 3, 4, 5 ]
+```
+
+<li>forEach(callback) : Executes each element but it doesn't return anying</li>
+
+```js
+let arr = [1,2,3]
+let result = arr.forEach((n)=>{ // Incorrect 
+  return n * 10                        
+})     
+let result2 = arr.forEach((n)=>{
+  console.log(n * 10)
+})  
+// Correct 
+// 10 
+// 20 
+// 30
+console.log(result)  // undefined
+console.log(result2) // undefined
+console.log(arr) // [ 1, 2, 3 ]
+```
+
+<li>flatMap(callback) : First does a map , then flatten one level.</li>
+
+```js
+//Example 1 :
+let arr = [1,2,3]
+let result = arr.flatMap((n)=>{
+  return [ n , n * 10]
+})
+console.log(result) // [ 1, 10, 2, 20, 3, 30 ]
+console.log(arr)    // [ 1, 2, 3 ]
+
+//Example 2 : In this return statement return only one. If you wanna all element return you can use [] square bracket.
+let arr = [1,2,3]
+let result = arr.flatMap((n)=>{
+  return  n , n * 10
+})
+console.log(result) // [ 10, 20, 30 ]
+console.log(arr)    // [ 1, 2, 3 ]
+```
+
+<li></li>
+
+```js
+```
+
+<li></li>
+
+```js
+```
+
+<li></li>
+
+```js
+```
+<ol>
