@@ -75,10 +75,10 @@ Arrays is a ordered collections of data.It stores multiple datatype values in a 
     <li>values()</li>
     <li>map(callback)</li>
     <li>forEach(callback)</li>
-    <li>flatMap()</li>
-    <li>filter()</li>
-    <li>reduce()</li>
-    <li>reduceRight()</li>
+    <li>flatMap(callback)</li>
+    <li>filter(callback)</li>
+    <li>reduce(callback,initial)</li>
+    <li>reduceRight(callback,initial)</li>
   </ul>
 </ol>
 
