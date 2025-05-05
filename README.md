@@ -3,8 +3,8 @@
 <h2>Javascript :-</h2>
 
 <ol>
-<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/tree/main/JS/Arrays">Arrays</a></li>
-<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/tree/main/JS/Functions">Functions</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Arrays/README.md">Arrays</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/tree/main/JS/Functions/README.md">Functions</a></li>
 </ol>
 
 <h2>JavaScript Interview Questions :-</h2>
