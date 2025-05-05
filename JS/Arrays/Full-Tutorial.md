@@ -2,6 +2,86 @@
 
 Arrays is a ordered collections of data.It stores multiple datatype values in a single variable.
 
+<h2>Overview of Array :-</h2>
+<ol>
+  <li>Types of Arrays :</li>
+  <ul>
+    <li>Numbers</li>
+    <li>String</li>
+    <li>Mixed</li>
+    <li>Objects</li>
+    <li>Multidimensional</li>
+  </ul>
+  <li>Two ways to create array :</li>
+  <ul>
+    <li>Literal</li>
+    <li>Constructor</li>
+  </ul>
+  <li>Mutation vs Non-Mutation :</li>
+  <li>Add & Remove Methods :</li>
+  <ul>
+    <li>push(...items)</li>
+    <li>unshift(...items)</li>
+    <li>pop()</li>
+    <li>shift()</li>
+    <li>splice(index,deleteCount,...items)-(Mutates)</li>
+    <li>toSpliced(index,no of delete items,add elements)-(Non-Mutates)</li>
+    <li>delete arr[index]</li>
+  </ul>
+  <li>Sorting Methods :</li>
+  <ul>
+    <li>sort()-(Alphabetically)</li>
+    <li>sort((a,b)=>a-b)-(Numerically)</li>
+    <li>toSorted()-(Non-Mutates)</li>
+    <li>reverse()</li>
+    <li>toReversed()-(Non-Mutates)</li>
+  </ul>
+  <li>Search & Check Methods : (both are Non-mutates)</li>
+  <ul>
+    <li>includes(value)</li>
+    <li>arr[index]</li>
+    <li>indexOf(value)</li>
+    <li>lastIndexOf(value)</li>
+    <li>find(callback)</li>
+    <li>findIndex(callback)</li>
+    <li>findLast(callback)</li>
+    <li>findLastIndex(callback)</li>
+    <li>some(callback)</li>
+    <li>every(callback)</li>
+  </ul>
+  <li>String & Utility Methods : (both are Non-mutates)</li>
+  <ul>
+    <li>join(separator)</li>
+    <li>split()</li>
+    <li>arr.length</li>
+    <li>toString()</li>
+  </ul>
+  <li>Extract & Copy Methods :</li>
+  <ul>
+    <li>slice(start,end)-(Non-Mutates)</li>
+    <li>concat(...arrays)-(Non-Mutates)</li>
+    <li>copyWithin(target,start,end)</li>
+    <li>with(index,value)-(Non-Mutates)</li>
+    <li>fill(value,start,end)</li>
+    <li>Array.isArray(arr)</li>
+    <li>Array.from(str)</li>
+    <li>Array.of(...items)</li>
+  </ul>
+  <li>Iteration & Looping Methods : (both are Non-mutates)</li>
+  <ul>
+    <li>flat(...arrays)</li>
+    <li>entries()</li>
+    <li>keys()</li>
+    <li>values()</li>
+    <li>map(callback)</li>
+    <li>forEach(callback)</li>
+    <li>flatMap()</li>
+    <li>filter()</li>
+    <li>reduce()</li>
+    <li>reduceRight()</li>
+  </ul>
+</ol>
+
 <h3>Types of Arrays :</h3>
 
 ```js
@@ -245,7 +325,7 @@ console.log(arr) // [ 1, 3, 5, 2, 7 ]
 </ol>
 
 
-<h3>String & Utility Methods :</h3>
+<h3>String & Utility Methods : (both are Non-mutates)</h3>
 <ol>
 <li>Combine to String using sperator</li>
 
@@ -372,7 +452,7 @@ console.log(Array.from(str)) // ['k', 'o', 'w', 's', 'a', 'l', 'y', 'a' ]
 ```
 </ol>
 
-<h3>Iteration & Looping Methods</h3>
+<h3>Iteration & Looping Methods : </h3>
 
 <ol>
 
