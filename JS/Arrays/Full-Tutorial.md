@@ -1,6 +1,6 @@
 <h1>Arrays in Javascript :</h1>
 
-Arrays is a ordered collections of data.It stores multiple datatype values in a single variable.
+Arrays are ordered collections of data. They store multiple values (of any datatype) in a single variable.
 
 <h2>Overview of Array :-</h2>
 <ol>
@@ -129,7 +129,7 @@ let arr = [1,2,4]
 arr.push(2,3)
 console.log(arr) // [1,2,4,2,3]
 ```
-<li>Add item at the start : Add one or more elements to the begining of an array.</li>
+<li>Add item at the start : Add one or more elements to the beginning of an array.</li>
 
 ```js
 let arr = [1,2,4]
@@ -171,7 +171,7 @@ console.log(arr)  // [1,2,4]
 console.log(arr2)   // ["a","b",2,4] 
 ```
 
-<li>delete arr.property : It only delete property not hole array</li>
+<li>delete arr.property : It only delete property not whole array</li>
 
 ```js
 let arr = [1,2,4]
@@ -203,7 +203,7 @@ arr.sort() // Incorrect for numbers [1,100,40,5]
 console.log(arr)
 arr.sort((a,b)=> a-b) //ascending order // Correct numerical sort [1,5,40,100]
 console.log(arr)
-arr.sort((a,b)=> b-a) //desending order // Correct numerical sort [100,40,5,1]
+arr.sort((a,b)=> b-a) //descending order // Correct numerical sort [100,40,5,1]
 console.log(arr)
 ```
 <li>toSorted - (Non-mutates) : Returns new sorted array without changing original array.</li>
