@@ -8,8 +8,8 @@
 
 <ol>
 <li>Second Largest Number <br>
-Input : [12,35,1,10,34,1] => Output: 34 <br>
-Input : [10,5,10] => Output: 5 <br>
+Input: [12,35,1,10,34,1], Output: 34 <br>
+Input: [10,5,10], Output: 5 <br>
 </li>
 
 ```js
