@@ -1,4 +1,4 @@
-:octocat: Coming Soon — The Ultimate like Zero to Hero JavaScript Interview Guide!🔥
+:octocat: Coming Soon — Zero to Hero JavaScript Interview Guide!🔥
 
 <h2>Javascript :-</h2>
 
