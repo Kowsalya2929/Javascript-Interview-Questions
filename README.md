@@ -1,10 +1,13 @@
 :octocat: Coming Soon — The Ultimate JavaScript + DSA in JavaScript Interview Guide! 👌🔥
 
-<h2>Data Structures :-</h2>
+<h2>Javascript :-</h2>
 
-1. Array Data Structure :
- Full Concepts : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.md">Link</a>
- 
+1. Arrays in Javascript :
+
+ <ul>
+ <li><a href="">Zero to Hero Concepts in Array</a></li>
+ <li><a href="">Practice Questions with Answers</a></li>
+ <ul>
 
 <h2>JavaScript Interview Questions :-</h2>
 

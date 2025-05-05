@@ -1,0 +1,1 @@
+<h1>Functions in Javascript :</h1>
