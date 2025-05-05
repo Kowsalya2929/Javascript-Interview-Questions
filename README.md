@@ -2,12 +2,10 @@
 
 <h2>Javascript :-</h2>
 
-1. Arrays in Javascript :
-
- <ul>
- <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Arrays/Full-Tutorial.md">Zero to Hero Concepts in Array</a></li>
- <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Arrays/Practice-QA.md">Practice Questions with Answers</a></li>
- </ul>
+<ol>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/tree/main/JS/Arrays">Arrays</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/tree/main/JS/Functions">Functions</a></li>
+</ol>
 
 <h2>JavaScript Interview Questions :-</h2>
 
