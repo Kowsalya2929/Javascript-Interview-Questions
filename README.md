@@ -2,8 +2,9 @@
 
 <h2>Data Structures :-</h2>
 
-1. Array Data Structure 
-=> Content : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.md">Link</a>
+1. Array Data Structure :
+ Full Concepts : <a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/DSA/Arrays%20data%20structure/arrays.md">Link</a>
+ 
 
 <h2>JavaScript Interview Questions :-</h2>
 

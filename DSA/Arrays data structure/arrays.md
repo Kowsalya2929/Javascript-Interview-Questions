@@ -1,4 +1,4 @@
-<h1>Arrays in Data Structure :</h1>
+<h1>Arrays in Javascript :</h1>
 
 Arrays is a ordered collections of data.It stores multiple datatype values in a single variable.
 
