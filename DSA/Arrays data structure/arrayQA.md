@@ -8,8 +8,8 @@
 
 <ol>
 <li>Second Largest Number <br>
-Input: [12,35,1,10,34,1], Output: 34 <br>
-Input: [10,5,10], Output: 5 <br>
+Input: [12,35,1,10,34,1], Output: 34.<br>
+Input: [10,5,10], Output: 5.<br>
 </li>
 
 ```js
@@ -25,6 +25,8 @@ function secondLargest(arr){
 console.log(secondLargest([12,35,1,10,34,1]))  // 34
 console.log(secondLargest([10,5,10]))  // 5
 console.log(secondLargest([7]))  // -1
+```
+
 <ul>
 <li>1 step : new Set(arr), It is finding unique values and does't comes in duplicate values. like, Ouput: Set(5) { 12, 35, 1, 10, 34 }.</li>
 <li>2 step : Array.from(str), It is coverts string to array. like, Output: [ 12, 35, 1, 10, 34 ].</li>
