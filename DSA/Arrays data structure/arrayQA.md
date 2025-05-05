@@ -4,7 +4,7 @@
 <li>Second Largest Number</li>
 </ol>
 
-<h4>Arrays in Question with Answer</h4>
+<h3>Arrays in Question with Answer</h3>
 
 <ol>
 <li>Second Largest Number
