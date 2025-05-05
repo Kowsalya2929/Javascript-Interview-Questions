@@ -2,7 +2,7 @@
 
 <ol>
 <li>Second Largest Number</li>
-<ol>
+</ol>
 
 <h4>Arrays in Question with Answer</h4>
 
