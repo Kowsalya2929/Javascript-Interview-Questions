@@ -7,9 +7,9 @@
 <h3>Arrays in Question with Answer</h3>
 
 <ol>
-<li>Second Largest Number
-Input : [12,35,1,10,34,1] => Output: 34
-Input : [10,5,10] => Output: 5
+<li>Second Largest Number <br>
+Input : [12,35,1,10,34,1] => Output: 34 <br>
+Input : [10,5,10] => Output: 5 <br>
 </li>
 
 ```js
