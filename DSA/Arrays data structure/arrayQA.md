@@ -1,4 +1,4 @@
-<h4>Arrays in Question</h4>
+<h2>Arrays in Question</h2>
 
 <ol>
 <li>Second Largest Number</li>
