@@ -314,12 +314,16 @@ arr.forEach((n)=>{
 <b><li>IIFE (Immediately Invoked Function Expression)</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>In this is immediately called.</li>
+<li>Used to run code once and create a private scope.</li>
 </ul>
 
 ```js
+(function(){
+    const message = "Secret"
+    console.log(message)     // Output: Secret
+})()
+console.log(message)    // ReferenceError: message is not defined
 ```
 
 <b><li>Generator</li></b>
