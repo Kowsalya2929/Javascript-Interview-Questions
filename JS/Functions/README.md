@@ -52,7 +52,6 @@
 <ol>
 <br>
 <b><li>Function Declaration</li></b>
-<br>
 <ul>
 <li>Defines a function with a name.</li>
 <li>Also known as named function.</li>
@@ -151,7 +150,6 @@ setTimeout(function(){
 ```
 
 <b><li>Arrow Function</li></b>
-<br>
 <ul>
 <li>Shorter syntax.</li>
 <li>No own (this, arguments, super).</li>
