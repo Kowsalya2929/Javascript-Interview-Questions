@@ -72,15 +72,30 @@ function greet(){
     console.log('kowsalya')
 }
 greet()   // Output: kowsalya
-```
 
-```js
 // Function Declarations is Hoisting
 greet()     // Output: kowsalya
 function greet(){
     console.log('kowsalya')
 }
+
+// Regular Function arguments is available
+function showArguments(){
+    console.log(arguments)
+}
+showArguments(1,2,3) // Output: [Arguments] { '0': 1, '1': 2, '2': 3 }
+
+// Regular function : this depends on how the function is called
+const obj = {
+    name : "kowsalya",
+    greet : function(){
+        console.log(this.name)
+    }
+}
+obj.greet() // Output: kowsalya
 ```
+
+
 <br>
 <b><li>Function Expression</li></b>
 <br>
@@ -103,41 +118,87 @@ const greet = function(){
     console.log('kowsalya')
 }
 greet()   // Output: kowsalya
-```
 
-```js
 // Named Function Expression 
 const greet = function sayHi(){
     console.log('kowsalya')
 } 
 greet()   // Output: kowsalya
 sayHi()   // Output: undefined (only accessible inside itself)
-```
 
-```js
 // Function Expression are not hoisted
 greet()    // Output:- Error : cannot access 'greet' before initialization
 const greet = function (){
     console.log('kowsalya')
 }
-```
 
-```js
 // Function Expression in callback
 setTimeout(function(){
     console.log('kowsalya')
 },1000)
+
 ```
 
 <b><li>Arrow Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>Shorter syntax.</li>
+<li>No own (this, arguments, super).</li>
 </ul>
 
 ```js
+// Syntax
+const functionName = (parameters) => {
+    // function body
+}
+
+// Shortest form
+const functionName = (p1, p2) => p1 + p2;
+```
+
+```js
+// Arrow Function Example
+const greet1 = () => {
+    console.log('kowsalya')
+}
+greet1()  // Output: kowsalya
+
+// One-linear return (Implicit Return)
+const square = n => n * n ;
+
+//No Parameters
+const greet2 = () => console.log('kowsalya') ;
+
+//With Parameters
+const sum = (a,b) => a + b ;
+
+// Arrow function arguments is not available
+const showArguments = () => {
+  console.log(arguments);
+}
+showArguments(1, 2, 3)   // Output:- ReferenceError: arguments is not defined
+
+// Correct way to use arrow function in arguments with rest parameters
+const showArguments = (...args) =>{
+    console.log(args)
+}
+showArguments(1,2,3)    // Output: [ 1, 2, 3 ]
+
+// Arrow function : this is taken from outside (lexical scope)
+const obj = {
+    name : "kowsalya",
+    greet : () => {
+        console.log(this.name)
+    }
+}
+obj.greet()  // Output: undefined
+
+// Arrow functions great for callbacks (map,filter,etc...)
+const arr = [1,2,3,4]
+const result = arr.map((n)=>{
+    return n + 5
+})
+console.log(result)   // Output: [ 6, 7, 8, 9 ]
 ```
 
 <b><li>Anonymous Function</li></b>
