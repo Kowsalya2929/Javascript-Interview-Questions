@@ -237,14 +237,13 @@ console.log(result)   // Output: [ 6, 7, 8, 9 ]
 <li>Keeps code clean for one-time use cases</li>
 </ul>
 
-<ul>
+<ol>
 <h4>Common uses of Anonymous Function</h4>
-<br>
 <li>setTimeout / setInterval</li>
 <li>Event Listeners</li>
 <li>Array Methods (map,filter,forEach,etc...)</li>
 <li>IIFEs (Immediately Invoked Function Expression)</li>
-</ul>
+</ol>
 
 ```js
 
