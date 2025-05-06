@@ -49,7 +49,7 @@
 
 <ol>
 <li>Bacic Functions Types.</li>
-<ul>
+<ol>
 <li>Function Declaration</li>
 
 <p>A function declaration defines a function with a name.</p>
@@ -81,7 +81,7 @@ function greet(){
 <li>Function Expression</li>
 <li>Arrow Function</li>
 <li>Anonymous Function</li>
-</ul>
+</ol>
 <li>Execution Types:</li>
 <ul>
 <li>IIFE (Immediately Invoked Function Expression)</li>
