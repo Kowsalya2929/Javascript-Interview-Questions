@@ -140,7 +140,7 @@ setTimeout(function(){
 ```js
 ```
 
-<li>Anonymous Function</li></b>
+<b><li>Anonymous Function</li></b>
 <br>
 <ul>
 <li></li>
