@@ -51,7 +51,7 @@
 <li>Bacic Functions Types.</li>
 <ol>
 <br>
-<li><b>Function Declaration</b></li>
+<b><li>Function Declaration</li></b>
 <br>
 <ul>
 <li>A function declaration defines a function with a name.</li>
