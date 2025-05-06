@@ -50,10 +50,13 @@
 <ol>
 <li>Bacic Functions Types.</li>
 <ol>
+<br>
 <li><b>Function Declaration</b></li>
-
-<p>A function declaration defines a function with a name.</p>
-<p>This function is hoisted, means you can call the function before it's declared in the code</p>
+<br>
+<ul>
+<li>A function declaration defines a function with a name.</li>
+<li>This function is hoisted, means you can call the function before it's declared in the code.</li>
+</ul>
 
 ```js 
 // Syntax
