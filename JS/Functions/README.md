@@ -155,6 +155,7 @@ setTimeout(function(){
 <ul>
 <li>Shorter syntax.</li>
 <li>No own (this, arguments, super).</li>
+<li>Best use for callbacks</li>
 </ul>
 
 ```js
@@ -229,14 +230,85 @@ console.log(result)   // Output: [ 6, 7, 8, 9 ]
 <b><li>Anonymous Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>Defines function without a name.</li>
+<li>No name needed, useful for private scope.</li>
+<li>Short, Inline logic</li>
+<li>No need for reuse</li>
+<li>Keeps code clean for one-time use cases</li>
+</ul>
+
+<ul>
+<h4>Common uses of Anonymous Function</h4>
+<br>
+<li>setTimeout / setInterval</li>
+<li>Event Listeners</li>
+<li>Array Methods (map,filter,forEach,etc...)</li>
+<li>IIFEs (Immediately Invoked Function Expression)</li>
 </ul>
 
 ```js
+
+// Syntax - Assigned ti a variable (Function Expression)
+const greet = function(){
+    console.log("kowsalya")
+}
+
+// Syntax - Passed as a callback
+setTimeout(function(){
+    console.log("Delayed Hello")
+},1000)
+
+// Syntax - Immediately Invoked Function Expression
+(function(){
+    console.log("I run immediately")
+})()
+
+// Syntax - Arrow Function can also be anonymous
+const greet = () =>{
+    console.log("kowsalya")
+}
 ```
 
+```js
+// Common uses of Anonymous Function :-
+
+// 1. setTimeout / setInterval :
+
+setTimeout(function(){
+    console.log("Run after 1 second")
+},1000)
+setInterval(function(){
+    console.log("Run after 2 second")
+},2000)
+
+// 2. Event Listeners :
+
+document.getElementById("btn").addEvenetListener("click",function(){
+    console.log("Button Clicked")
+})
+
+// 3. Array Methods (map,filter,forEach,etc...) :
+
+const arr = [1,2,3]
+
+const squared = arr.map((n)=>{
+    return n * n;
+})
+
+const even = arr.filter((n)=>{
+    return n%2 === 0;
+})
+
+arr.forEach((n)=>{
+    console.log(n * n)
+})
+
+// 4. IIFEs (Immediately Invoked Function Expression) :
+
+(function(){
+    console.log("Run immediately")
+})()
+```
 </ol>
 <b><li>Execution Types:</li></b>
 <br>
