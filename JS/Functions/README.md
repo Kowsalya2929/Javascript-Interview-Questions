@@ -48,13 +48,14 @@
 
 
 <ol>
-<li>Bacic Functions Types.</li>
+<b><li>Bacic Functions Types.</li></b>
 <ol>
 <br>
 <b><li>Function Declaration</li></b>
 <br>
 <ul>
-<li>A function declaration defines a function with a name.</li>
+<li>Defines a function with a name.</li>
+<li>Also known as named function.</li>
 <li>This function is hoisted, means you can call the function before it's declared in the code.</li>
 </ul>
 
@@ -66,7 +67,7 @@ function functionName(parameters){
 ```
 
 ```js
-// Example of Function Declaration
+// Function Declaration
 function greet(){
     console.log('kowsalya')
 }
@@ -74,61 +75,355 @@ greet()   // Output: kowsalya
 ```
 
 ```js
-// Example of Function Declarations is Hoisting
+// Function Declarations is Hoisting
 greet()     // Output: kowsalya
 function greet(){
     console.log('kowsalya')
 }
 ```
+<br>
+<b><li>Function Expression</li></b>
+<br>
+<ul>
+<li>Assigned to a variable.</li>
+<li>It can be anonymous (no name) or named.</li>
+<li>It is not hoisted, means you can't call before it's declared</li>
+</ul>
 
-<li>Function Expression</li>
-<li>Arrow Function</li>
-<li>Anonymous Function</li>
+```js
+// Syntax
+const variableName = function(parameters){
+    // function body
+}
+```
+
+```js
+// Function Expression // The function has no name means Anonymous function
+const greet = function(){
+    console.log('kowsalya')
+}
+greet()   // Output: kowsalya
+```
+
+```js
+// Named Function Expression 
+const greet = function sayHi(){
+    console.log('kowsalya')
+} 
+greet()   // Output: kowsalya
+sayHi()   // Output: undefined (only accessible inside itself)
+```
+
+```js
+// Function Expression are not hoisted
+greet()    // Output:- Error : cannot access 'greet' before initialization
+const greet = function (){
+    console.log('kowsalya')
+}
+```
+
+```js
+// Function Expression in callback
+setTimeout(function(){
+    console.log('kowsalya')
+},1000)
+```
+
+<b><li>Arrow Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<li>Anonymous Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
 </ol>
-<li>Execution Types:</li>
+<b><li>Execution Types:</li></b>
+<br>
 <ul>
-<li>IIFE (Immediately Invoked Function Expression)</li>
-<li>Generator</li>
-<li>Async</li>
+<b><li>IIFE (Immediately Invoked Function Expression)</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
 </ul>
-<li>Function Classification:</li>
+
+```js
+```
+
+<b><li>Generator</li></b>
+<br>
 <ul>
-<li>First Class Function</li>
-<li>First Order Function</li>
-<li>Higher Order Function</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
-<li>Functional Programming Types:</li>
+
+```js
+```
+
+<b><li>Async</li></b>
+<br>
 <ul>
-<li>Unary Function</li>
-<li>Currying Function</li>
-<li>Pure Function</li>
-<li>Impure Function</li>
-<li>Callback Function</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
-<li>Object-Oriented & ES6:</li>
-<ul>
-<li>Constructor Function</li>
-<li>Class Method</li>
-<li>Static Method</li>
+
+```js
+```
+
 </ul>
-<li>Functional Internals:</li>
+<b><li>Function Classification:</li></b>
+<br>
 <ul>
-<li>Arguments Object</li>
-<li>Rest Parameters</li>
-<li>Default Parameters</li>
+<b><li>First Class Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
 </ul>
-<li>Closures & Scope:</li>
+
+```js
+```
+
+<b><li>First Order Function</li></b>
+<br>
 <ul>
-<li>Closure</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
-<li>this & Binding:</li>
+
+```js
+```
+
+<b><li>Higher Order Function</li></b>
+<br>
 <ul>
-<li>this in Function</li>
-<li>call, apply, bind</li>
+<li></li>
+<li></li>
+<li></li>
 </ul>
-<li>Advanced Concepts</li>
+
+```js
+```
+
+</ul>
+<li>Functional Programming Types:</li></b>
+<br>
 <ul>
-<li>Function Composition</li>
-<li>Debounce / Throttle</li>
+<b><li>Unary Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Currying Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Pure Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Impure Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Callback Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+</ul>
+<b><li>Object-Oriented & ES6:</li></b>
+<br>
+<ul>
+<b><li>Constructor Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Class Method</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Static Method</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+</ul>
+<b><li>Functional Internals:</li></b>
+<br>
+<ul>
+<b><li>Arguments Object</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Rest Parameters</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Default Parameters</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+</ul>
+<b><li>Closures & Scope:</li></b>
+<br>
+<ul>
+<b><li>Closure</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+</ul>
+<b><li>this & Binding:</li></b>
+<br>
+<ul>
+<b><li>this in Function</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>call, apply, bind</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+</ul>
+<b><li>Advanced Concepts</li></b>
+<br>
+<ul>
+<b><li>Function Composition</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
+<b><li>Debounce / Throttle</li></b>
+<br>
+<ul>
+<li></li>
+<li></li>
+<li></li>
+</ul>
+
+```js
+```
+
 </ul>
 </ol>
