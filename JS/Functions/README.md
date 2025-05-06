@@ -228,7 +228,6 @@ console.log(result)   // Output: [ 6, 7, 8, 9 ]
 ```
 
 <b><li>Anonymous Function</li></b>
-<br>
 <ul>
 <li>Defines function without a name.</li>
 <li>No name needed, useful for private scope.</li>
