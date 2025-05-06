@@ -72,19 +72,25 @@ function greet(){
     console.log('kowsalya')
 }
 greet()   // Output: kowsalya
+```
 
+```js
 // Function Declarations is Hoisting
 greet()     // Output: kowsalya
 function greet(){
     console.log('kowsalya')
 }
+```
 
+```js
 // Regular Function arguments is available
 function showArguments(){
     console.log(arguments)
 }
 showArguments(1,2,3) // Output: [Arguments] { '0': 1, '1': 2, '2': 3 }
+```
 
+```js
 // Regular function : this depends on how the function is called
 const obj = {
     name : "kowsalya",
@@ -118,25 +124,30 @@ const greet = function(){
     console.log('kowsalya')
 }
 greet()   // Output: kowsalya
+```
 
+```js
 // Named Function Expression 
 const greet = function sayHi(){
     console.log('kowsalya')
 } 
 greet()   // Output: kowsalya
 sayHi()   // Output: undefined (only accessible inside itself)
+```
 
+```js
 // Function Expression are not hoisted
 greet()    // Output:- Error : cannot access 'greet' before initialization
 const greet = function (){
     console.log('kowsalya')
 }
+```
 
+```js
 // Function Expression in callback
 setTimeout(function(){
     console.log('kowsalya')
 },1000)
-
 ```
 
 <b><li>Arrow Function</li></b>
@@ -162,28 +173,40 @@ const greet1 = () => {
     console.log('kowsalya')
 }
 greet1()  // Output: kowsalya
+```
 
+```js
 // One-linear return (Implicit Return)
 const square = n => n * n ;
+```
 
+```js
 //No Parameters
 const greet2 = () => console.log('kowsalya') ;
+```
 
+```js
 //With Parameters
 const sum = (a,b) => a + b ;
+```
 
+```js
 // Arrow function arguments is not available
 const showArguments = () => {
   console.log(arguments);
 }
 showArguments(1, 2, 3)   // Output:- ReferenceError: arguments is not defined
+```
 
+```js
 // Correct way to use arrow function in arguments with rest parameters
 const showArguments = (...args) =>{
     console.log(args)
 }
 showArguments(1,2,3)    // Output: [ 1, 2, 3 ]
+```
 
+```js
 // Arrow function : this is taken from outside (lexical scope)
 const obj = {
     name : "kowsalya",
@@ -192,7 +215,9 @@ const obj = {
     }
 }
 obj.greet()  // Output: undefined
+```
 
+```js
 // Arrow functions great for callbacks (map,filter,etc...)
 const arr = [1,2,3,4]
 const result = arr.map((n)=>{
