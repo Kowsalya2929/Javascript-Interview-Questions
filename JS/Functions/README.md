@@ -310,7 +310,6 @@ arr.forEach((n)=>{
 <br>
 <ul>
 <b><li>IIFE (Immediately Invoked Function Expression)</li></b>
-<br>
 <ul>
 <li>In this IIFE function is immediately called.</li>
 <li>Used to run code once and create a private scope.</li>
@@ -336,7 +335,6 @@ console.log(message)    // ReferenceError: message is not defined
 ```
 
 <b><li>Async</li></b>
-<br>
 <ul>
 <li>async : Declares function that returns a promise.</li>
 <li>await : Waits for a Promise to resolve.</li>
