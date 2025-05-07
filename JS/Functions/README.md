@@ -428,45 +428,70 @@ console.log(processUser(greet, "John")); // Hello, John!
 <b><li>Unary Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>Takes exactly one argument</li>
 </ul>
 
 ```js
+// Unary function
+const square = (a) => a * a ;
+
 ```
 
 <b><li>Currying Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>multiple arguments into a series of unary function.</li>
 </ul>
 
 ```js
+// Currying function
+function sum(a){
+    return function(b){
+        return a + b;
+    }
+}
+console.log(sum(1)(1))  // Output: 2
 ```
 
 <b><li>Pure Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>Same output for same input, No side effects.</li>
+<li>Does not produce side effects (like modifying global variables, logging, DOM updates, API calls, etc.)</li>
 </ul>
 
 ```js
+// Pure function
+function sum(a,b){
+    return  a+b;
+}
 ```
 
 <b><li>Impure Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
+<li>Depends on external state.</li>
+<li>Produce side effects (like modifying global variables, logging, DOM updates, API calls, etc.)</li>
 <li></li>
 </ul>
 
 ```js
+// Depends on external variable
+let count = 0;
+function impureIncrement() {
+  count++; // modifies an external variable
+}
+console.log(impureIncrement())  // Output: undefined
+```
+
+```js
+// Logging is a side effect
+function logMessage(message) {
+  console.log(message); // side effect: logs to console
+}
+console.log(logMessage("test message"))  
+// test message
+// undefined (because it isn't return)
 ```
 
 <b><li>Callback Function</li></b>
