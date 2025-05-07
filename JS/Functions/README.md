@@ -472,7 +472,6 @@ function sum(a,b){
 <ul>
 <li>Depends on external state.</li>
 <li>Produce side effects (like modifying global variables, logging, DOM updates, API calls, etc.)</li>
-<li></li>
 </ul>
 
 ```js
@@ -497,12 +496,18 @@ console.log(logMessage("test message"))
 <b><li>Callback Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>A function passed as an argument to another function.</li>
 </ul>
 
 ```js
+// Callback function
+function sayHi(name,callback){
+    callback(name)
+}
+function greet(name){
+    console.log(`Hi!, ${name}`)
+}
+sayHi("kowsalya",greet) // Output: Hi!, kowsalya
 ```
 
 </ul>
