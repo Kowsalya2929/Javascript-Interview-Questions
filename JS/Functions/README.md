@@ -506,29 +506,50 @@ sayHi("kowsalya",greet) // Output: Hi!, kowsalya
 <br>
 <ul>
 <b><li>Constructor Function</li></b>
-<br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>A constructor function is a regular function used to create and initialize objects.</li>
+<li>It is javascript object oriented features (pre ES6)</li>
 </ul>
 
 ```js
+// Constructor function with new
+function person(name){
+    this.name = name;
+}
+const person1 = new person("kowsalya")
+console.log(person1)     // Output: person { name: 'kowsalya' }
+console.log(person1.name)    // Output: kowsalya
+```
+
+```js
+// Constructor function without new
+function person(name){
+    this.name = name;
+}
+const person1 = person("kowsi")
+console.log(person1)     // Output:- undefined
+console.log(person1.name)   // Output:- TypeError: Cannot read property 'name' of undefined
+console.log(global.name)  // Output: kowsi
 ```
 
 <b><li>Class Method</li></b>
-<br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>A class method is just a function inside a class</li>
+<li>We can run on object created from class</li>
 </ul>
 
 ```js
+// Class method
+class Car {
+    drive(){
+        console.log("Driving...")
+    }
+}
+const myCar = new Car()
+myCar.drive()     // Output: Driving...
 ```
 
 <b><li>Static Method</li></b>
-<br>
 <ul>
 <li></li>
 <li></li>
@@ -543,7 +564,6 @@ sayHi("kowsalya",greet) // Output: Hi!, kowsalya
 <br>
 <ul>
 <b><li>Arguments Object</li></b>
-<br>
 <ul>
 <li></li>
 <li></li>
