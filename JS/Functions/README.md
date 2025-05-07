@@ -355,34 +355,70 @@ async function functionName(){
 <b><li>First Class Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>Functions are treated like values (assigned, returned, passed)</li>
 </ul>
 
 ```js
+// Example
+function greet(){
+    return "Hi"
+}
+
+// Assigned to a variable
+const sayHi = greet;
+
+// Passed as an argument
+function executor(fn){
+    return fn()         // Calling or returned
+}
+console.log(executor(sayHi))  // Output: Hi
 ```
 
 <b><li>First Order Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>First order function is regular function that</li>
+<li>Doesn't take another function as input(argument).</li>
+<li>Doesn't return a function also.</li>
 </ul>
 
 ```js
+// Example of First order function
+function sum(a,b){
+    return a + b;
+}
+console.log(sum(2,3))    // Output: 5
 ```
 
 <b><li>Higher Order Function</li></b>
 <br>
 <ul>
-<li></li>
-<li></li>
-<li></li>
+<li>A function that takes(one or more) function or returns another function.</li>
 </ul>
 
 ```js
+// Returns a function
+function higherOrder(fn){
+    return function(x){
+        return fn(x) * 2
+    }
+}
+function square(n){
+    return n * n
+}
+const doubleSquare = higherOrder(square)
+console.log(doubleSquare(3))      // 18 → (3²) * 2
+```
+
+```js
+// Takes a function as argument
+function greet(name) {
+  return `Hello, ${name}!`;
+}
+function processUser(fn, name) {
+  return fn(name);
+}
+console.log(processUser(greet, "John")); // Hello, John!
 ```
 
 </ul>
