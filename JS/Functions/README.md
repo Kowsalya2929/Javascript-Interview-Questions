@@ -103,7 +103,6 @@ obj.greet() // Output: kowsalya
 
 <br>
 <b><li>Function Expression</li></b>
-<br>
 <ul>
 <li>Assigned to a variable.</li>
 <li>It can be anonymous (no name) or named.</li>
@@ -353,7 +352,6 @@ async function functionName(){
 <br>
 <ul>
 <b><li>First Class Function</li></b>
-<br>
 <ul>
 <li>Functions are treated like values (assigned, returned, passed)</li>
 </ul>
@@ -375,7 +373,6 @@ console.log(executor(sayHi))  // Output: Hi
 ```
 
 <b><li>First Order Function</li></b>
-<br>
 <ul>
 <li>First order function is regular function that</li>
 <li>Doesn't take another function as input(argument).</li>
@@ -391,7 +388,6 @@ console.log(sum(2,3))    // Output: 5
 ```
 
 <b><li>Higher Order Function</li></b>
-<br>
 <ul>
 <li>A function that takes(one or more) function or returns another function.</li>
 </ul>
@@ -426,7 +422,6 @@ console.log(processUser(greet, "John")); // Hello, John!
 <br>
 <ul>
 <b><li>Unary Function</li></b>
-<br>
 <ul>
 <li>Takes exactly one argument</li>
 </ul>
@@ -438,7 +433,6 @@ const square = (a) => a * a ;
 ```
 
 <b><li>Currying Function</li></b>
-<br>
 <ul>
 <li>multiple arguments into a series of unary function.</li>
 </ul>
@@ -454,7 +448,6 @@ console.log(sum(1)(1))  // Output: 2
 ```
 
 <b><li>Pure Function</li></b>
-<br>
 <ul>
 <li>Same output for same input, No side effects.</li>
 <li>Does not produce side effects (like modifying global variables, logging, DOM updates, API calls, etc.)</li>
@@ -468,7 +461,6 @@ function sum(a,b){
 ```
 
 <b><li>Impure Function</li></b>
-<br>
 <ul>
 <li>Depends on external state.</li>
 <li>Produce side effects (like modifying global variables, logging, DOM updates, API calls, etc.)</li>
@@ -494,7 +486,6 @@ console.log(logMessage("test message"))
 ```
 
 <b><li>Callback Function</li></b>
-<br>
 <ul>
 <li>A function passed as an argument to another function.</li>
 </ul>
