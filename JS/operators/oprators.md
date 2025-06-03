@@ -9,7 +9,7 @@
 7. **Ternary Operator:**
 8. **Type Operator:**
 
-1. **Arithmetic Operator:**
+**Arithmetic Operator:**
 
 1. **Addition(+):**
 
