@@ -6,10 +6,17 @@
 4. **String Operator:**
 5. **Logical Operator:**
 6. **Bitwise Operator:**
-7. **Ternary Operator:**
+7. **Ternary Operator or conditional operator**
 8. **Type Operator:**
-9. **Nullish Coalesing Operator(??)**
-10. **Chaining Operator(?.)**
+9. **instanceof operator**
+10. **Nullish Coalesing Operator(??)**
+11. **Chaining Operator(?.)**
+12. **Convert Decimal to Binary**
+13. **Convert Binary to Decimal**
+14. **Comma Operator(,)**
+15. **delete Operator**
+16. **in Operator or Relational Operators**
+
 
 **Arithmetic Operator:**
 
@@ -359,7 +366,7 @@ console.log(a >> 1)
          // = 3
 ```
 
-**Ternary Operator(?:):**
+**Ternary Operator or conditional operator:**
 
 ```js
 let a = 10;
@@ -367,6 +374,8 @@ console.log( a === 10 ? "OK" : "NOT OK" )
 ```
 
 **Type Operator:**
+
+- typeof operator returns the type of variable.
 
 ```js
 typeof "John"          // Returns "string"
@@ -399,6 +408,19 @@ typeof null           // object
 
 null === undefined    // false
 null == undefined     // true
+```
+
+**instanceof operator**
+
+- Returns true, if a variable is an object.
+- Syntax :- (object instanceof constructor)
+
+```js
+const obj = ["hi","hello","wellcome"]
+console.log(obj instanceof Array)   // Returns true
+console.log(obj instanceof Object)  // Returns true
+console.log(obj instanceof String)  // Returns false
+console.log(obj instanceof Number)  // Returns false
 ```
 
 **Nullish Coalesing Operator(??)**
@@ -435,4 +457,60 @@ function dec2bin(dec){
 function bin2dec(bin){
     return parseInt(bin,2).toString(10);
 }
+```
+
+**Comma Operator(,):**
+
+- The comma (,) operator evaluates each of its operands (from left to right) and returns the value of the last operand.
+
+```js
+let x = 0;
+
+x = (x++,x) //(0,1)
+console.log(x) //last operand 1 is output.
+
+x = (1,4)
+console.log(x) //last operad 4 is output.
+```
+
+**delete Operator**
+
+- The delete operator removes a property from an object.
+- Syntax :- 
+```js
+delete object.property
+delete object[property]
+```
+
+```js
+const obj = {name : "tesla",age:2025};
+console.log(obj.name) //tesla
+delete obj.name;
+console.log(obj.name) //undefined
+```
+
+**in Operator or Relational Operators**
+
+- The in operator returns true if a property is in an object, otherwise false
+- Syntax :-
+```js
+prop in object
+#prop in object
+```
+
+```js
+const obj = {name:"tesla",age:2025}
+console.log("name" in obj) //ture
+console.log("mname" in obj) //false
+```
+
+- You cannot use in operator with property , we will use in operator with index value in array.
+
+```js
+let arr = ["abc","pqr","xyz"]
+console.log("abc" in arr) //false
+console.log(0 in arr) //ture
+console.log(1 in arr) //ture
+console.log(2 in arr) //ture
+console.log(3 in arr) //false
 ```
