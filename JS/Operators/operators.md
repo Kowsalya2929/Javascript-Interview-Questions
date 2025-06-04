@@ -8,6 +8,8 @@
 6. **Bitwise Operator:**
 7. **Ternary Operator:**
 8. **Type Operator:**
+9. **Nullish Coalesing Operator(??)**
+10. **Chaining Operator(?.)**
 
 **Arithmetic Operator:**
 
@@ -397,4 +399,40 @@ typeof null           // object
 
 null === undefined    // false
 null == undefined     // true
+```
+
+**Nullish Coalesing Operator(??)**
+
+- First argument always is nullish(null or undefined) then second will display.
+
+```js
+let name = null;
+let text = "hi";
+console.log(name ?? text) //hi
+```
+
+**Chaining Operator(?.)**
+
+```js
+let car = {
+    modelname : "tesla", age : 2025
+}
+console.log(car?.name) //undefined
+console.log(car?.age)  //2025
+```
+
+**Convert Decimal to Binary**
+
+```js
+function dec2bin(dec){
+    return (dec >>> 0).toString(2);
+}
+```
+
+**Convert Binary to Decimal**
+
+```js
+function bin2dec(bin){
+    return parseInt(bin,2).toString(10);
+}
 ```
