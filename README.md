@@ -49,6 +49,18 @@ const reverseStr = str.split("").reverse().join("")
 console.log(reverseStr)
 ```
 
+```js
+//reverse string without using built in methods
+function reverseStr(str){
+    let rstr = '';
+    for(let i = str.length - 1;i >= 0;i--){
+        rstr += str[i];
+    }
+    return rstr;
+}
+console.log(reverseStr("hello"))
+```
+
 <h3>2. Check if a string is a palindrome</h3>
 
 <h5>Explanation</h5>

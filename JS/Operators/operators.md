@@ -244,4 +244,157 @@ console.log("2" > 2) //false
 console.log("2" >= 2) //ture
 ```
 
+**Logical Operator:**
 
+1. **Logical AND(&&):**
+
+```js
+let a = 5;
+let b = 6;
+if(a <= 5 && b > 3){
+    console.log("ok")  //ok
+}else {
+    console.log("not ok")
+}
+```
+
+2. **Logical OR(||):**
+
+```js
+let a = 5;
+let b = 6;
+if(a <= 5 || b > 7){
+    console.log("ok") //ok
+}else {
+    console.log("not ok")
+}
+```
+
+3. **Logical NOT(!):**
+
+```js
+let a = 5;
+if(a != 6) {
+    console.log("ture") //ture
+}else {
+    console.log("false")
+}
+```
+
+**Bitwise Operator:**
+
+1. **Bitwise AND(&):**
+
+```js
+let a = 3;  //0011
+let b = 4;  //0100
+console.log(a&b) //0000 => 0
+```
+
+2. **Bitwise OR(|):**
+
+```js
+let a = 3;  //0011
+let b = 4;  //0100
+console.log(a|b) //0111 => 7
+```
+
+3. **Bitwise XOR(^):**
+
+```js
+let a = 3;  //0011
+let b = 4;  //0100
+console.log(a^b) //0111 => 7
+```
+
+4. **Bitwise NOT(~):** 
+
+- Formula :- ~n = -(n + 1)
+
+```js
+let a = 8;
+console.log(~a) //~8 = -(8 + 1) => -9
+let b = -6;
+console.log(~b) 
+//~(-6) = -((-6)+1)
+        //-( -6 +1) 
+        //-(-5)
+        //5 output
+```
+
+5. **Bitwise Left Shift Operator(<<):**
+
+- Formula :- (n << 3) = n * 2 ^ 3 , (n << 6) = n * 2 ^ 6
+
+```js
+let a = 4;
+console.log(a << 6) 
+// (4 << 6) = 4 * 2 ^ 6 
+         // = 4 * (2*2*2*2*2*2)
+         // = 4 * 64
+         // = 256
+```
+
+6. **Bitwise Right Shift Operator(>>):** 
+
+- Formula :- (n >> 3) = n / 2 ^ 3 , (n >> 2) = n / 2 ^ 2
+
+```js
+let a = 6;
+console.log(a >> 4)
+console.log(a >> 2)
+console.log(a >> 1)
+// (6 >> 4) = 6 / 2 ^ 4
+         // = 6 / (2*2*2*2)
+         // = 6 / 16
+         // = 0
+// (6 >> 2) = 6 / 2 ^ 2
+         // = 6 / (2*2)
+         // = 6 / 4
+         // = 1
+// (6 >> 1) = 6 / 2 ^ 1
+         // = 6 / (2*1)
+         // = 3
+```
+
+**Ternary Operator(?:):**
+
+```js
+let a = 10;
+console.log( a === 10 ? "OK" : "NOT OK" )
+```
+
+**Type Operator:**
+
+```js
+typeof "John"          // Returns "string"
+typeof ("John"+"Doe")  // Returns "string"
+typeof 3.14            // Returns "number"
+typeof (33 + 66)       // Returns "number"
+typeof NaN             // Returns "number"
+typeof 1234n           // Returns "bigint"
+typeof true            // Returns "boolean"
+typeof false           // Returns "boolean"
+typeof {name:'John'}   // Returns "object"
+typeof [1,2,3,4]       // Returns "object"
+typeof {}              // Returns "object"
+typeof []              // Returns "object"
+typeof new Object()    // Returns "object"
+typeof new Array()     // Returns "object"
+typeof new Date()      // Returns "object"
+typeof new Set()       // Returns "object"
+typeof new Map()       // Returns "object"
+typeof function () {}  // Returns "function"
+typeof x               // Returns "undefined"
+typeof null            // Returns "object"
+```
+
+```js
+//Difference Between Undefined and Null
+
+typeof undefined      // undefined
+typeof null           // object
+
+null === undefined    // false
+null == undefined     // true
+```
