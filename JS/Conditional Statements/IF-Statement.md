@@ -1,11 +1,5 @@
 ### IF Statement Question with Answer
 
-1.**Write an if-statement to verify whether a given string contains the word 'JavaScript'.**
-2.**Write a program to check whether a character is a vowel using if.**
-3.**Write a JS program using an if statement to check if a number is positive.**
-4.**Create a JS function that checks if a given year is a leap year using an if statement.**
-5.**Use if to check if a person is eligible to vote (age >= 18).**
-
 1. Write an if-statement to verify whether a given string contains the word 'JavaScript'.
 
 ```js

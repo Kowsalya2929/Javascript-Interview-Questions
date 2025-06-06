@@ -6,8 +6,8 @@
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Arrays/README.md">Arrays</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/tree/main/JS/Functions/README.md">Functions</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Operators/operators.md">Operators</a></li>
-<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Operators/IF-Statement.md">Conditional If Statement</a></li>
-<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Operators/IF-Statement.md">Conditional If Else Statement</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Conditional Statements/IF-Statement.md">Conditional If Statement</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Conditional Statements/IF...Else-Statement.md">Conditional If Else Statement</a></li>
 
 </ol>
 
