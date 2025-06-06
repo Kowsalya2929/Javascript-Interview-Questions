@@ -1,6 +1,6 @@
 ### IF Statement Question with Answer
 
-1. Write an if-statement to verify whether a given string contains the word 'JavaScript'.
+**1. Write an if-statement to verify whether a given string contains the word 'JavaScript'.**
 
 ```js
 //Example 1
@@ -26,7 +26,7 @@ if(str.trim() === ""){
 //Output : Correct word
 ```
 
-2. Write a program to check whether a character is a vowel using if.
+**2. Write a program to check whether a character is a vowel using if.**
 
 ```js
 // Eample 1
@@ -50,7 +50,7 @@ if("aeiou".includes(char.toLowerCase())){
 //Output : Vowel
 ```
 
-3. Write a JS program using an if statement to check if a number is positive.
+**3. Write a JS program using an if statement to check if a number is positive.**
 
 ```js
 //Example 1
@@ -126,7 +126,7 @@ if(num < 0){
 //Output : Input is empty or undefined
 ```
 
-4. Create a JS function that checks if a given year is a leap year using an if statement.
+**4. Create a JS function that checks if a given year is a leap year using an if statement.**
 
 
 ```js
@@ -145,7 +145,7 @@ console.log(leapYear(2020))
 //Output : Leap Year
 ```
 
-5. Use if to check if a person is eligible to vote (age >= 18).
+**5. Use if to check if a person is eligible to vote (age >= 18).**
 
 ```js
 let age = 18;
