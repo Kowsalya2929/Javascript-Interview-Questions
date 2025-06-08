@@ -13,7 +13,9 @@ console.log(Boolean(-7.3))        //true
 console.log(Boolean("kowsalya"))  //true
 console.log(Boolean("false"))     //true
 console.log(Boolean("true"))      //true
-console.log(Boolean(7 + 1 + 3.14))//true
+console.log(Boolean(7 + 1 + 3.14))       //true
+console.log(Boolean(7 + "1" + 3.14))     //true
+console.log(Boolean("7" + "1" + "3.14")) //true
 console.log(Boolean({}))          //true
 console.log(Boolean([]))          //true
 console.log(Boolean(true))        //true
