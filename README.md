@@ -11,6 +11,8 @@
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Conditional Statements/IF...Else-Statement.md">Conditional If Else Statement</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Conditional Statements/Else...IF-Statement.md">Conditional Else If Statement</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Conditional Statements/Switch-Statement.md">Conditional Switch Statement</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Number/number.md">Number</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Date/Date.md">Date</a></li>
 </ol>
 
 <h2>Most Important JavaScript Interview Questions :-</h2>
@@ -50,7 +52,7 @@
 33. Find the common elements in two arrays
 34. Find the factorial number of using recursion
 35. Generate random number
-36. check if a year a leap year\
+36. check if a year a leap year
 37. Find sum of N natural numbers
 38. Implement a simple login system
 39. Find the maximum occuring character in a string
