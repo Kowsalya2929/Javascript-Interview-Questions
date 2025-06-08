@@ -13,6 +13,7 @@
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Conditional Statements/Switch-Statement.md">Conditional Switch Statement</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Number/number.md">Number</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Date/Date.md">Date</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Boolean/boolean.md">Boolean</a></li>
 </ol>
 
 <h2>Most Important JavaScript Interview Questions :-</h2>
