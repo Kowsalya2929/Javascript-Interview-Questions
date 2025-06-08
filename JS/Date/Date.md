@@ -10,7 +10,7 @@ console.log(typeof x)          //Object
 console.log(x instanceof Date) //true
 ```
 
-- 7 ways common create new Date object;
+- common ways to create Date object;
 
 ```js
 const date2 = new Date("2025-06-08");          // ISO format
