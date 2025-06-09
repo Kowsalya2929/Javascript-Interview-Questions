@@ -237,7 +237,7 @@ console.log(x > 2) //false
 
 - Unicode values
 - ("0" to "9") = (48 to 57)
-- ("A" to "Z") = (65 to 90) //ASCII VALUES (Americal Standard Code Information Interchange)
+- ("A" to "Z") = (65 to 90) //ASCII VALUES (American Standard Code Information Interchange)
 - ("a" to "z") = (97 to 122)
 
 ```js
