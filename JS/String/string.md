@@ -58,8 +58,9 @@ console.log(str.length) //19
 9. text.trimStart() : Removing whitespace at start only end and center will not remove whitespace.
 10. text.trimEnd() : Removing whitespace at end only start and center will not remove whitespace.
 11. text.split() : It splits with words or char what you give in center.
-12. text.padStart() : 
-
+12. text.padStart() and text.padEnd()
+13. text.repeat() : Returns a new string. Does not change the original string.
+14. 
 
 ```js
 //charAt() : allow positive indexes and not allow negative indexes.
@@ -149,7 +150,7 @@ console.log(text.trim())  //"          Kowsalya loganathan"
 ```
 
 ```js
-//text.split() : It splits with words or char what you give in center.
+//text.split() : It splits with words or char what you give in center. A string can be converted to an array.
 let text = "Hi,i am kowsalya"
 console.log(text.split())    //[ 'Hi,i am kowsalya' ]
 console.log(text.split(""))    //['H', 'i', ',', 'i',' ', 'a', 'm', ' ','k', 'o', 'w', 's','a', 'l', 'y', 'a']
@@ -158,3 +159,39 @@ console.log(text.split(","))   //[ 'Hi', 'i am kowsalya' ]
 console.log(text.split("a"))   //[ 'Hi,i ', 'm kows', 'ly', '' ]
 ```
 
+```js
+//text.padStart() and text.padEnd() 
+let text = "5"
+console.log(text.padStart(4,"0"))  //0005
+console.log(text.padEnd(4,"x"))    //5xxx
+console.log(text.padStart(4,0))  //0005
+console.log(text.padEnd(4,0))    //5000
+// To pad a number, convert the number to a string first.
+let text2 = 5;
+text2 = text2.toString()
+console.log(text2.padStart(4,"0"))  //0005
+console.log(text2.padEnd(4,"0"))    //5000
+console.log(text2.padStart(4,0))  //0005
+console.log(text2.padEnd(4,0))    //5000
+```
+
+```js
+//text.repeat() : Returns a new string. Does not change the original string.
+//syntax : string.repeat(count)
+let text = "Hello"
+console.log(text.repeat(3)) //HelloHelloHello
+let text2 = text.repeat(6)  
+console.log(text)           //Hello
+console.log(text2)          //HelloHelloHelloHelloHelloHello
+```
+
+```js
+//replace() : Returns a new string. Replaces only the first match. If you want to replace all matches, use a regular expression with the /g flag set. 
+let text = "Please visit Microsoft and Microsoft!"
+console.log(text.replace("Microsoft","our course"))  //Please visit our course and Microsoft!
+console.log(text)  //Please visit Microsoft and Microsoft!
+let text2 = text.replace("Microsoft","our course")
+console.log(text2) //Please visit our course and Microsoft!
+//i flag (insensitive)
+//g flag (global match)
+```

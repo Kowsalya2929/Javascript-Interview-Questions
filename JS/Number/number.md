@@ -203,6 +203,60 @@ console.log(Number("kowsalya")) //NaN
 console.log(Number(new Date("1970-01-02"))) // 86400000 => milli seconds from 1970-01-01. Convert date to number.
 ```
 
+- parseInt() method :
+
+1. parse a string return a whole number.
+2. spaces are allowed.
+3. only the first numnber is returned.
+4. convert string to numbers.
+
+```js
+console.log(parseInt("-10"))        //-10
+console.log(parseInt("-10.33"))     //-10
+console.log(parseInt("10"))         //10
+console.log(parseInt("10.33"))      //10
+console.log(parseInt("10 6"))       //10
+console.log(parseInt("10 years"))   //10
+console.log(parseInt("years 10"))   //NaN
+```
+
+- parseFloat() method :
+
+1. parse a string return a number.
+2. spaces are allowed.
+3. only first number is returned.
+4. convert string to number.
+
+```js
+console.log(parseFloat("-10"))        //-10
+console.log(parseFloat("-10.33"))     //-10.33
+console.log(parseFloat("10"))         //10
+console.log(parseFloat("10.33"))      //10.33
+console.log(parseFloat("10 6"))       //10
+console.log(parseFloat("10 years"))   //10
+console.log(parseFloat("years 10"))   //NaN
+```
+
+- Number object methods : both will return true or false only.
+
+1. isInteger() 
+2. isSafeInteger() : Safe integer are all integers from (-(2<sup>53</sup>- 1) to  +(2<sup>53</sup>- 1)). Like This is safe integers : (0 to 9007199254740991) and not safe (9007199254740992)
+
+
+```js
+//wrong way : Don't use
+let x = 32;
+console.log(x.isInteger()) //TypeError
+
+//Correct code
+Number.isInteger(11) //true
+Number.isInteger(10.5)  //false
+
+//Safe integer
+Number.isSafeInteger(10) //true
+Number.isSafeInteger(9007199254740992) //false
+```
+
 - Number Properties
 
 1. Epsilon => 1, -1
