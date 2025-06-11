@@ -18,6 +18,8 @@
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/DOM/dom.md">DOM</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Regular Expression/RegExp.md">Regular Expression</a></li>
 <li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/String/string.md">String</a></li>
+<li><a href="https://github.com/Kowsalya2929/Javascript-Interview-Questions/blob/main/JS/Falsy-Truthy Values/F-T Values.md">Falsy and Truthy</a></li>
+
 </ol>
 
 <h2>Most Important JavaScript Interview Questions :-</h2>
