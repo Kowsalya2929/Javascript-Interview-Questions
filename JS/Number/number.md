@@ -1,6 +1,6 @@
 ### Number with Questions and Answers
 
-- Javascript has only one type of number. It is with decimal and decimal
+- Javascript has only one type of number. It is with decimal and without decimal.
 
 ```js
 let x = 3.14 // with decimal
