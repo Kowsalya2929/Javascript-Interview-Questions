@@ -322,17 +322,6 @@ arr.forEach((n)=>{
 console.log(message)    // ReferenceError: message is not defined
 ```
 
-<b><li>Generator</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-
-```js
-```
-
 <b><li>Async</li></b>
 <ul>
 <li>async : Declares function that returns a promise.</li>
