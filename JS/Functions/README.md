@@ -322,17 +322,6 @@ arr.forEach((n)=>{
 console.log(message)    // ReferenceError: message is not defined
 ```
 
-<b><li>Generator</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
-
-```js
-```
-
 <b><li>Async</li></b>
 <ul>
 <li>async : Declares function that returns a promise.</li>
@@ -549,118 +538,176 @@ const myCar = new Car()
 myCar.drive()     // Output: Driving...
 ```
 
-<b><li>Static Method</li></b>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+## 1. **Static Method**
+
+Static methods are defined on the class, not the instance.
+
+* Used for utility functions.
+* Cannot access `this` unless it's also static.
+* Called using `ClassName.method()`.
 
 ```js
+class MathHelper {
+  static square(x) {
+    return x * x;
+  }
+}
+
+console.log(MathHelper.square(5)); // 25
 ```
 
-</ul>
-<b><li>Functional Internals:</li></b>
-<br>
-<ul>
-<b><li>Arguments Object</li></b>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+---
+
+## 2. **Functional Internals**
+
+### a. **Arguments Object**
+
+* Available inside all non-arrow functions.
+* An array-like object holding all passed arguments.
+* Not available in arrow functions.
 
 ```js
+function showArgs() {
+  console.log(arguments);
+}
+
+showArgs(1, 2, 3); // [1, 2, 3]
 ```
 
-<b><li>Rest Parameters</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+### b. **Rest Parameters**
+
+* Packs all remaining arguments into an array.
+* Preferred over `arguments`.
+* Works in arrow functions too.
 
 ```js
+function sum(...nums) {
+  return nums.reduce((a, b) => a + b, 0);
+}
+
+console.log(sum(1, 2, 3)); // 6
 ```
 
-<b><li>Default Parameters</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+### c. **Default Parameters**
+
+* Allows default values for parameters.
+* Used when no argument is passed.
+* Simplifies fallback logic.
 
 ```js
+function greet(name = "Guest") {
+  console.log("Hello, " + name);
+}
+
+greet(); // Hello, Guest
 ```
 
-</ul>
-<b><li>Closures & Scope:</li></b>
-<br>
-<ul>
-<b><li>Closure</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+---
+
+## 3. **Closures & Scope**
+
+### a. **Closure**
+
+* A function remembers variables from its lexical scope.
+* Used for data privacy.
+* Powerful for factory functions.
 
 ```js
+function outer() {
+  let count = 0;
+  return function () {
+    count++;
+    return count;
+  };
+}
+
+const counter = outer();
+console.log(counter()); // 1
+console.log(counter()); // 2
 ```
 
-</ul>
-<b><li>this & Binding:</li></b>
-<br>
-<ul>
-<b><li>this in Function</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+---
+
+## 4. **this & Binding**
+
+### a. **this in Function**
+
+* Refers to the calling context.
+* `this` in regular functions depends on how it's called.
+* Arrow functions don’t have their own `this`.
 
 ```js
+function show() {
+  console.log(this);
+}
+
+const obj = { show };
+obj.show(); // refers to obj
 ```
 
-<b><li>call, apply, bind</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+### b. **call, apply, bind**
+
+* `call`: invokes function with `this` + comma args.
+* `apply`: like `call` but with array args.
+* `bind`: returns new function with bound `this`.
 
 ```js
+function greet(place) {
+  console.log(`Hello ${this.name} from ${place}`);
+}
+
+const user = { name: "Alice" };
+
+greet.call(user, "India");   // Hello Alice from India
+greet.apply(user, ["USA"]);  // Hello Alice from USA
+const bound = greet.bind(user);
+bound("UK");                 // Hello Alice from UK
 ```
 
-</ul>
-<b><li>Advanced Concepts</li></b>
-<br>
-<ul>
-<b><li>Function Composition</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+---
+
+## 5. **Advanced Concepts**
+
+### a. **Function Composition**
+
+* Combine small functions into bigger ones.
+* Output of one becomes input of next.
+* Helps with cleaner pipelines.
 
 ```js
+const add = x => x + 2;
+const double = x => x * 2;
+
+const composed = x => double(add(x));
+
+console.log(composed(5)); // 14
 ```
 
-<b><li>Debounce / Throttle</li></b>
-<br>
-<ul>
-<li></li>
-<li></li>
-<li></li>
-</ul>
+### b. **Debounce / Throttle**
+
+**Debounce**: Run function only after delay with no repeats.
+**Throttle**: Run function at regular intervals.
 
 ```js
+// Debounce
+function debounce(fn, delay) {
+  let timer;
+  return function (...args) {
+    clearTimeout(timer);
+    timer = setTimeout(() => fn.apply(this, args), delay);
+  };
+}
+
+// Throttle
+function throttle(fn, limit) {
+  let waiting = false;
+  return function (...args) {
+    if (!waiting) {
+      fn.apply(this, args);
+      waiting = true;
+      setTimeout(() => (waiting = false), limit);
+    }
+  };
+}
 ```
 
-</ul>
-</ol>
