@@ -38,3 +38,56 @@ console.log(secondLargest([7]))  // -1
 </ul>
 
 <ol>
+
+
+<h3>Write a JavaScript program to create an array of 5 numbers and print each number</h3>
+
+```js
+const arr = [1,2,3,4,5]
+
+let result = [];
+
+for(let i=0 ; i<arr.length ;i++){
+    result = arr[i]
+    console.log(result)
+}
+
+// 1
+// 2
+// 3
+// 4
+// 5
+```
+
+<h3> Write a JavaScript program to add a new element to an array</h3>
+
+```js
+const arr = [1,2,3,5,6]
+arr[arr.length] = 9
+console.log(arr) //[ 1, 2, 3, 5, 6, 9 ]
+```
+
+<h3>Write a JavaScript program to find the length of an array.</h3>
+
+```js
+const arr = [1,2,3,5]
+console.log(arr.length) //4
+```
+
+<h3> Write a JavaScript program to remove the last element from an array.</h3>
+
+```js
+const arr = [1,2,3,4,5,6]
+
+arr.pop()
+
+console.log(arr) //[1,2,3,4,5]
+```
+
+<h3>Write a JavaScript program to sort an array of numbers in ascending order.</h3>
+
+```js
+const arr = [1,2,3,55,100,33,22]
+
+console.log(arr.sort((a,b)=>a - b)) //[1,2,3,22,33,55,100]
+```

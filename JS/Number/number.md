@@ -161,11 +161,12 @@ console.log(x.toExponential(0))    //1e+1
 
 ```js
 let x = 9.656
-console.log(x.toFixed())    //10
-console.log(x.toFixed(2))    //10
-console.log(x.toFixed(4))    //9.66
-console.log(x.toFixed(6))    //9.6560
-console.log(x.toFixed(0))    //9.656000
+console.log(x.toFixed())     //10
+console.log(x.toFixed(2))    //9.65
+console.log(x.toFixed(4))    //9.6560
+console.log(x.toFixed(6))    //9.656000
+console.log(x.toFixed(0))    //10
+
 ```
 
 - toPrecision() method : return as a string.

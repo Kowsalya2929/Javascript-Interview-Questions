@@ -60,7 +60,6 @@ console.log(str.length) //19
 11. text.split() : It splits with words or char what you give in center.
 12. text.padStart() and text.padEnd()
 13. text.repeat() : Returns a new string. Does not change the original string.
-14. 
 
 ```js
 //charAt() : allow positive indexes and not allow negative indexes.
@@ -194,4 +193,48 @@ let text2 = text.replace("Microsoft","our course")
 console.log(text2) //Please visit our course and Microsoft!
 //i flag (insensitive)
 //g flag (global match)
+```
+
+<h3>Write a JavaScript program to find the length of a string</h3>
+
+```js
+const str = "Kowsalya Loganthan"
+
+console.log(str.length) //18
+```
+
+<h3> Write a JavaScript program to convert a string to uppercase</h3>
+
+```js
+const str = "Kowsalya Loganthan"
+
+console.log(str.toUpperCase()) //KOWSALYA LOGANATHAN
+```
+
+<h3> Write a JavaScript program to check if a string contains a specific word.</h3>
+
+```js
+function f1(str,word){
+    return str.toLowerCase().includes(word.toLowerCase())
+}
+const str = "i am a software developer"
+const word = "am"
+console.log(f1(str,word))
+```
+
+<h3>Write a JavaScript program to extract a substring from a string</h3>
+
+```js
+const str = "i am a developer"
+console.log("hi," + str.slice(7)) //hi,developer
+```
+
+<h3> Write a JavaScript program to replace a word in a string with another word</h3>
+
+```js
+const str = "i am an developer"
+
+str = str.replace("an","a")
+
+console.log(str) //i am a developer
 ```
